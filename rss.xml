@@ -1,4 +1,290 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Web developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige, Web developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 17 Jan 2019 17:23:15 GMT</lastBuildDate><item><title><![CDATA[A random emoji in your terminal prompt. How and Why!]]></title><description><![CDATA[In this article, we will see how to customize our terminal prompt and add a random emoji in it. This is my terminal prompt: If I could have…]]></description><link>https://loige.co/random-emoji-in-your-prompt-how-and-why</link><guid isPermaLink="false">https://loige.co/random-emoji-in-your-prompt-how-and-why</guid><pubDate>Mon, 17 Dec 2018 18:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.co/static/random-emoji-in-your-prompt-how-and-why-fb-92ffbf9bb7ea19bc7d5042cbadef5651.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;In this article, we will see how to customize our terminal prompt and add a random emoji in it.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Web developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige, Web developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 20 Jan 2019 02:16:44 GMT</lastBuildDate><item><title><![CDATA[2018 - A year in review]]></title><description><![CDATA[It is that time of the year when I have to look back at the previous year and see what were my achievements, my failures and set my…]]></description><link>https://loige.co/2018-a-year-in-review</link><guid isPermaLink="false">https://loige.co/2018-a-year-in-review</guid><pubDate>Sat, 19 Jan 2019 18:59:58 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.co/static/2018-a-year-in-review-fb-810834c3898f8d0697413fe667cb5205.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;It is that time of the year when I have to look back at the previous year and see what were my achievements, my failures and set my expectations for my 2019.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full disclosure&lt;/strong&gt;: I write this type of posts mostly for myself, so I expect this to be
+boring to death and most likely useless for everyone else.&lt;/p&gt;
+&lt;p&gt;You have been warned, read at your own risk!&lt;/p&gt;
+&lt;h2 id=&quot;static-blog-migration&quot;&gt;&lt;a href=&quot;#static-blog-migration&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Static blog migration&lt;/h2&gt;
+&lt;p&gt;Interesting achievement of the last year is that I finally migrated this blog from Ghost to a static setup using totally free and Open Source tools, which costs me &lt;strong&gt;0.00 $ per month&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I am using &lt;a href=&quot;https://www.gatsbyjs.org&quot;&gt;GatsbyJS&lt;/a&gt; as the engine for the static website.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 600px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHTlaBA8P/EABoQAQABBQAAAAAAAAAAAAAAAAIBAAMSEyD/2gAIAQEAAQUCLuZ7HUNTx//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAAIDAQAAAAAAAAAAAAAAAAABICEyM//aAAgBAQAGPwJ0c2YcP//EABsQAQACAgMAAAAAAAAAAAAAAAEAIRExIFFh/9oACAEBAAE/IUClAolO57hmrHvD/9oADAMBAAIAAwAAABC4z//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxBdn//EAB0QAQEAAgEFAAAAAAAAAAAAAAERACEgMUFRocH/2gAIAQEAAT8QWaVDTexcnIYPUA+IX1j5uURBuD94f//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-574a9.webp 256w,
+/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-7c813.webp 512w,
+/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-0af70.webp 600w&quot;
+          sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-66650.jpg 256w,
+/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-ff1ba.jpg 512w,
+/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-bfcc3.jpg 600w&quot;
+          sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-bfcc3.jpg&quot;
+          alt=&quot;GatsbyJS logo&quot;
+          title=&quot;&quot;
+          src=&quot;/static/gatsbyjs-logo-63257f8df5cd084496fcf6a804ce3806-bfcc3.jpg&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;If you are curious to see my setup (and maybe even correct typos in my articles), I have everything open sourced at
+&lt;a href=&quot;https://github.com/lmammino/loige.co&quot;&gt;lmammino/loige.co&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I don’t think my GatsbyJS config is particularly interesting, but the entire publishing pipeline might be worth some words.&lt;/p&gt;
+&lt;p&gt;As per January 2019, this blog is published on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; using the &lt;a href=&quot;https://github.com/lmammino/loige.co/tree/gh-pages&quot;&gt;gh-pages branch&lt;/a&gt; which I publish using the very handy &lt;a href=&quot;http://npm.im/gh-pages&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The static website is served through &lt;a href=&quot;https://www.cloudflare.com/cdn&quot;&gt;Cloudflare CDN&lt;/a&gt;, which takes care of speeding up the delivery across the globe and other handy things like making sure the website runs on &lt;code class=&quot;language-text&quot;&gt;https&lt;/code&gt; correctly.&lt;/p&gt;
+&lt;p&gt;Every time I push on master, a &lt;a href=&quot;https://circleci.com&quot;&gt;CirlceCI&lt;/a&gt; build is triggered, and, if the build succeeds, a new version of the website is published automatically.&lt;/p&gt;
+&lt;p&gt;Checkout my &lt;a href=&quot;https://github.com/lmammino/loige.co/blob/master/.circleci/config.yml&quot;&gt;CircleCI config&lt;/a&gt; if you want to do something similar.&lt;/p&gt;
+&lt;p&gt;I wanted to do something like this for a while, so being able to achieve this was a big win for me!&lt;/p&gt;
+&lt;h2 id=&quot;conference-talks&quot;&gt;&lt;a href=&quot;#conference-talks&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conference talks&lt;/h2&gt;
+&lt;p&gt;Pretty much like in the last 2 years, I tried to invest some of my time in engaging with the community through conference talks.&lt;/p&gt;
+&lt;p&gt;This year wasn’t my best, but I still managed to deliver 8 talks and a workshop around the world. For the first time I delivered one outside Europe in the amazing New York.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 1024px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.69921875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGxsbUGKCv/xAAZEAACAwEAAAAAAAAAAAAAAAABAwIRIjL/2gAIAQEAAQUCD400Eha8tOVCoL5//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAIS/9oACAECAQE/AaZf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAEQAhEhMmH/2gAIAQEABj8C1FYzFK5H/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERITFBkVH/2gAIAQEAAT8hUuy4eibyOTKEzoqN6ZY7hTyN2f/aAAwDAQACAAMAAAAQwC//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxAn/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAgEBPxDgYGX/xAAcEAEBAAMBAAMAAAAAAAAAAAABEQAhMUFRYaH/2gAIAQEAAT8QsNFwdn4w0n0Fnn1hIK96M1pZQGAp3CpMR67c0mdL+5//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-455d5.webp 256w,
+/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-da4dd.webp 512w,
+/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-f80a5.webp 1024w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-39e2f.jpg 256w,
+/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-7bb7e.jpg 512w,
+/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-2d30d.jpg 1024w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-2d30d.jpg&quot;
+          alt=&quot;Luciano Mammino at FullStack London&quot;
+          title=&quot;&quot;
+          src=&quot;/static/luciano-mammino-fullstack-london-55608752c5bde8f20ffa7c14c0af42cc-2d30d.jpg&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;Here’s the full list of talks for 2018, you can find more details in the usual &lt;a href=&quot;https://loige.co/speaking/&quot;&gt;speaking section&lt;/a&gt; with links to slides and videos when available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;”&lt;em&gt;Getting started with Serverless and Lambda Functions&lt;/em&gt;” (workshop), Codemotion Rome (April)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Unbundling the JavaScript module bundler&lt;/em&gt;”, Codemotion Rome (April)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;The future will be Serverless&lt;/em&gt;”, JS Day Verona (May)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Cracking JWT tokens: a tale of magic, Node.JS and parallel computing&lt;/em&gt;”, Web Rebels Oslo (June)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Cracking JWT tokens: a tale of magic, Node.JS and parallel computing&lt;/em&gt;”, Buzz JS New York (June)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Unbundling the JavaScript module bundler&lt;/em&gt;”, Dublin JS (July)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Cracking JWT tokens: a tale of magic, Node.JS and parallel computing&lt;/em&gt;”, FullStack London (July)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Unbundling the JavaScript module bundler&lt;/em&gt;”, Øredev Malmo (November)&lt;/li&gt;
+&lt;li&gt;”&lt;em&gt;Processing TeraBytes of data every day and sleeping at night&lt;/em&gt;”, Codemotion Milan (November)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compared to 2017, when I presented 17 talks/workshops, this is a -52.94% “growth” rate. Ouch! 😵&lt;/p&gt;
+&lt;p&gt;In reality, I don’t mind at all this level of commitment for conferences and workshops and I’ll try to keep
+2019 to a similar rate to 2018 and not overcommit.&lt;/p&gt;
+&lt;h2 id=&quot;career&quot;&gt;&lt;a href=&quot;#career&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Career&lt;/h2&gt;
+&lt;p&gt;From a career perspective I spent my 2018 at Vectra, where I worked ”&lt;em&gt;automating the hunt for cyberattackers and speeding-up incident response&lt;/em&gt;”, which essentially means building software that help companies to identify cyber attacks and resolve them as quick as possible and with the least amount of effort.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 99.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMFAQIE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAG0ikiubBhNV/eG4P/EABwQAAIBBQEAAAAAAAAAAAAAAAEDAgAEERMxFP/aAAgBAQABBQIRJoMPpHLpmtNtEhQ49QfPGBX/xAAWEQEBAQAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BCY//xAAWEQEBAQAAAAAAAAAAAAAAAAABESD/2gAIAQIBAT8BW4//xAAcEAEAAQUBAQAAAAAAAAAAAAABEQACEBIyMUH/2gAIAQEABj8CrT4GGOnytnq9lxF6wNAY/8QAHBABAAIDAAMAAAAAAAAAAAAAAQARECExYXGB/9oACAEBAAE/IVOVGdylps+4LYq0e8LtdqxaaCAPJuFpIBUOT//aAAwDAQACAAMAAAAQOMcA/8QAFhEAAwAAAAAAAAAAAAAAAAAAASAx/9oACAEDAQE/EByn/8QAFREBAQAAAAAAAAAAAAAAAAAAIEH/2gAIAQIBAT8QoH//xAAeEAEAAgICAwEAAAAAAAAAAAABABEhMUFRYXGBsf/aAAgBAQABPxAlkO2JQUw3C5Ho41NW33MFs6PZeAhO7Al1d1Xiv2FKN/SZDrqFFnDmiGVGBvBiXpavln//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-207bd.webp 256w,
+/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-60378.webp 512w,
+/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-2bced.webp 800w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-cde06.jpg 256w,
+/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-3c926.jpg 512w,
+/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-9f177.jpg 800w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-9f177.jpg&quot;
+          alt=&quot;Vectra Cognito Platform against Cyber Attackers&quot;
+          title=&quot;&quot;
+          src=&quot;/static/vectra-cognito-stop-cyber-attackers-9b2993745b21a51e39b309684220e01c-9f177.jpg&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;One year at Vectra has been a blast and I had the pleasure (and luck 🍀) to be able to contribute to some important success stories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was involved in bootstrapping and scaling up a new European site that started from 3 and now counts 20+ people (engineering and sales). All world-class professionals with whom I love to work and from whom I can learn a lot every day.&lt;/li&gt;
+&lt;li&gt;Built a new product line from scratch. The product is already making revenue! This is a quite complicated product that is able to ingest and make searchable &lt;a href=&quot;https://loige.link/terabytes&quot;&gt;Terabytes of data every day&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;Witnessed an astounding &lt;a href=&quot;https://www.vectra.ai/news/vectra-announces-104-growth-in-annual-recurring-revenue-during-2018&quot;&gt;104% growth in annual recurring revenue&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; One year in the making, there was no shortage of personal skills development:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved my knowledge of &lt;strong&gt;AWS&lt;/strong&gt;, including &lt;a href=&quot;https://loige.co/aws-solution-architect-associate-exam-notes-tips&quot;&gt;getting certificated as Solution Architect&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Improved my knowledge of several technologies I love: &lt;strong&gt;Terraform&lt;/strong&gt;, &lt;strong&gt;Ansible&lt;/strong&gt;, &lt;strong&gt;Packer&lt;/strong&gt;, &lt;strong&gt;ElasticSearch&lt;/strong&gt;, &lt;strong&gt;Node.js&lt;/strong&gt;, &lt;strong&gt;JavaScript&lt;/strong&gt;, &lt;strong&gt;Python&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Got some new interesting use cases for &lt;strong&gt;Serverless architectures&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Started to acquire totally new skills like &lt;strong&gt;GoLang&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Deep dived into binary protocols like &lt;strong&gt;Capnp&lt;/strong&gt; and got much better understanding of some low level mechanics like &lt;strong&gt;serialization&lt;/strong&gt; and &lt;strong&gt;memory management&lt;/strong&gt; (thank you &lt;a href=&quot;https://twitter.com/gbinside&quot;&gt;@gbinside&lt;/a&gt; for your forbearing mentorship on this).&lt;/li&gt;
+&lt;li&gt;Worked a lot on &lt;strong&gt;Node.js performance optimizations&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Learned a bit about &lt;strong&gt;network security&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Been exposed to some high level &lt;strong&gt;AI/ML&lt;/strong&gt; concepts.&lt;/li&gt;
+&lt;li&gt;I have been a team leader and an architect, which meant that I had to engage a lot with peers and customers which probably improved some soft skills: &lt;strong&gt;empathy&lt;/strong&gt;, &lt;strong&gt;communication&lt;/strong&gt;, &lt;strong&gt;teamwork&lt;/strong&gt;, &lt;strong&gt;patience&lt;/strong&gt;, &lt;strong&gt;accountability&lt;/strong&gt;, etc (I hope I also improved my english in the process 😅).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With this premise, I expect my 2019 at Vectra to be even more exciting than 2018. I am sure I’ll learn and grow a ton.&lt;/p&gt;
+&lt;p&gt;There is a lot of work to do to keep the current growth rate, and I’ll do my best to do my part!&lt;/p&gt;
+&lt;h2 id=&quot;side-projects&quot;&gt;&lt;a href=&quot;#side-projects&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Side projects&lt;/h2&gt;
+&lt;p&gt;In 2017, I launched and contributed to a number of interesting side projects.
+In 2018, I didn’t launch any new one, but I tried to take care at best of the
+projects launched in the previous year, so I am going to recap here what happened with each one of them.&lt;/p&gt;
+&lt;h3 id=&quot;fullstack-bulletin&quot;&gt;&lt;a href=&quot;#fullstack-bulletin&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fullstack bulletin&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://fullstackbulletin.com&quot;&gt;FullStack Bulletin&lt;/a&gt;, a newsletter for ambitious FullStack developers, has been ongoing in 2018 with the same format of 2017 except some minor improvement. It recently surpassed 1000 subscribers, all through organic growth.&lt;/p&gt;
+&lt;p&gt;This projejcts takes me 30-60 minutes of work every week, but I am happy to keep investing the time as it works for me as well to stay up to date with the latest FullStack trends.&lt;/p&gt;
+&lt;p&gt;I still plan to invest on it during 2019 and maybe try to improve the format (new layout, new books, new quotes, etc.).&lt;/p&gt;
+&lt;h3 id=&quot;serverless-lab&quot;&gt;&lt;a href=&quot;#serverless-lab&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Serverless lab&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://serverlesslab.com&quot;&gt;Serverless Lab&lt;/a&gt; is a side-project started by &lt;a href=&quot;https://twitter.com/podgeypoos79&quot;&gt;Padraig “Podge” O’Brien&lt;/a&gt; and myself to help companies to get started quickly with serverless technologies on AWS.&lt;/p&gt;
+&lt;p&gt;During 2018, we took a chance to improve and update our material, but we used it for only one workshop.&lt;/p&gt;
+&lt;p&gt;It really takes a lot of time to find interested crowds. So far, all the engagement was mostly organic.&lt;/p&gt;
+&lt;p&gt;I am not sure yet how much I will commit on this project in 2019. I’ll try to see if there’s interest in the market.&lt;/p&gt;
+&lt;h3 id=&quot;middy&quot;&gt;&lt;a href=&quot;#middy&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Middy&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://middy.js.org&quot;&gt;Middy&lt;/a&gt; is a &lt;em&gt;Node.js middleware engine for AWS Lambda&lt;/em&gt;. It basically allows you to take care of tedious and repetitive tasks such as validation, input deserialization and output serialization by encapsulating this external logic into reusable and testable middlewares.&lt;/p&gt;
+&lt;p&gt;In 2018 middy had a decent success. Here some numbers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;almost 500 stars on Github&lt;/li&gt;
+&lt;li&gt;an average of 6.000 downloads a week&lt;/li&gt;
+&lt;li&gt;31 contributors over 124 releases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am quite proud of this project, even though in the latest months I felt like I didn’t have the time, neither the energies to properly take care of it. My response time has become unacceptable and open PRs and Issues have been accumulating. I am a bit worried that the project will start to drift away.&lt;/p&gt;
+&lt;p&gt;I recently &lt;a href=&quot;https://github.com/middyjs/middy/issues/263&quot;&gt;asked more support to the other contributors&lt;/a&gt;, basically stepping away from being the main maintainer.&lt;/p&gt;
+&lt;p&gt;I have to thank you some people for being there and trying their best to support the project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/theburningmonk&quot;&gt;Yan Cui&lt;/a&gt; (who also wrote &lt;a href=&quot;https://epsagon.com/blog/enforce-consistent-error-handling-in-aws-lambda-with-wrappers/&quot;&gt;an amazing article that mentions middy&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/vladholubiev&quot;&gt;Vlad Holubiev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/DavidWells&quot;&gt;David Wells&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; And all the other contributors.&lt;/p&gt;
+&lt;p&gt;A stable version for the 1.0.0 branch has not been released yet. I’ll try to focus on getting it done in 2019 and to try to be a little bit more responsive in replying to PRs and issues.&lt;/p&gt;
+&lt;p&gt;Meanwhile I hope new people will be able to jump on board and support the project.&lt;/p&gt;
+&lt;h3 id=&quot;fastify&quot;&gt;&lt;a href=&quot;#fastify&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fastify&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.fastify.io&quot;&gt;Fastify&lt;/a&gt;, started by &lt;a href=&quot;https://twitter.com/delvedor&quot;&gt;
+Tomas Della Vedova&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/matteocollina&quot;&gt;Matteo Collina&lt;/a&gt; is a &lt;strong&gt;fast and low overhead web framework for Node.js&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I have been marginally contributing to this fantastic project, taking care of setting up the official website (including the docs) and its automated pipeline.&lt;/p&gt;
+&lt;p&gt;In 2018, I did some minor improvements, but nothing major.&lt;/p&gt;
+&lt;p&gt;I admire all the contributors to the project as they managed to invest an incredible amount of energies in the project and attracted a pool of very talented people creating a strong community of users.&lt;/p&gt;
+&lt;p&gt;I am glad and grateful that I am being considered one of the core team members, even though I am very far away from putting the same amount of energy that the other contributors do.&lt;/p&gt;
+&lt;p&gt;I want to narrow my focus in 2019 so I don’t have any special plan to contribute more to Fastify in 2019, but I’ll try to be available to give my support on improving the website where needed.&lt;/p&gt;
+&lt;h2 id=&quot;blog-posts&quot;&gt;&lt;a href=&quot;#blog-posts&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blog posts&lt;/h2&gt;
+&lt;p&gt;In 2018 I wasn’t a very active author… So I’ll go straight to the list of new posts published in this blog during the year:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/aws-command-line-s3-content-from-stdin-or-to-stdout&quot;&gt;AWS Command line: S3 content from stdin or to stdout&lt;/a&gt; (~7.800 views)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/aws-solution-architect-associate-exam-notes-tips&quot;&gt;AWS Solution Architect Associate exam, my notes and tips&lt;/a&gt; (~5.800 views)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/emerging-javascript-pattern-multiple-return-values&quot;&gt;Emerging JavaScript pattern: multiple return values&lt;/a&gt; (~3.200 views)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/random-emoji-in-your-prompt-how-and-why&quot;&gt;A random emoji in your terminal prompt. How and Why!&lt;/a&gt; (~1.500 views)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s interesting to see that there’s still a lot of the traffic driven by old (and maybe outdated) articles from the previous years like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands&quot;&gt;Extracting data from Wikipedia using curl, grep, cut and other shell commands&lt;/a&gt; (~7.300 views)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/using-lets-encrypt-and-certbot-to-automate-the-creation-of-certificates-for-openvpn&quot;&gt;Using Let’s Encrypt and Certbot to automate the creation of certificates for OpenVPN
+&lt;/a&gt; (~7.200 views)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/developing-a-web-application-with-lumen-and-mysql&quot;&gt;Developing a web application with Lumen and MySql&lt;/a&gt; (~7.000 views)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://loige.co/gulp-and-ftp-update-a-website-on-the-fly&quot;&gt;Gulp and FTP: update a website “on the fly”&lt;/a&gt; (~4.000 views).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The total number of page views amounts to about 65.000 views, which compared to the previous year total of 57.000 is a slight increase of 14.04%!&lt;/p&gt;
+&lt;p&gt;I guess I have to write more and find more interesting topics if I want to keep this blog relevant in 2019! Also I should probably focus more on one or two topics, rather then writing about random fun stuff that comes into my mind!&lt;/p&gt;
+&lt;h2 id=&quot;external-posts&quot;&gt;&lt;a href=&quot;#external-posts&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;External posts&lt;/h2&gt;
+&lt;p&gt;Aside from the articles published on my blog I had the pleasure to collaborate with Avanscoperta and &lt;a href=&quot;https://twitter.com/gojkoadzic&quot;&gt;Gojko Adzic&lt;/a&gt; writing an interview from the title ”&lt;a href=&quot;https://blog.avanscoperta.it/it/2018/08/31/is-serverless-the-future-of-cloud-computing&quot;&gt;Is Serverless the future of Cloud Computing?&lt;/a&gt;“.&lt;/p&gt;
+&lt;p&gt;It’s always fun and rewarding to write guest posts and it’s a nice way to get my name out from my common channels.&lt;/p&gt;
+&lt;p&gt;I guess in 2019 I should keep doing that and maybe build some new relationship with other publishers :)&lt;/p&gt;
+&lt;h2 id=&quot;open-sourcing&quot;&gt;&lt;a href=&quot;#open-sourcing&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Open Sourcing&lt;/h2&gt;
+&lt;p&gt;In 2018, I kept spending some time working out some small open source contributions. Here’s a quick list of my main GitHub contributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/fib-it&quot;&gt;lmammino/fib-it&lt;/a&gt;: 6 ways to generate a fibonacci sequence in JavaScript.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/twaffle&quot;&gt;lmammino/twaffle&lt;/a&gt;: A TWitter rAFFLE script.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/get-poop-done&quot;&gt;lmammino/get-poop-done&lt;/a&gt;: A crappy-but-lovely™ todo list app.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/invok&quot;&gt;lmammino/invok&lt;/a&gt;: Command line tool to Invoke Go lambda functions locally.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/salesforce/ja3&quot;&gt;salesforce/ja3&lt;/a&gt; (contribution): JA3 is a standard for creating SSL client fingerprints in an easy to produce and shareable way.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/felixhageloh/uebersicht&quot;&gt;felixhageloh/uebersicht&lt;/a&gt; (contribution): Keep an eye on what’s happening on your machine and in the world.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gatsbyjs/gatsby&quot;&gt;gatsbyjs/gatsby&lt;/a&gt; (contribution): Build blazing fast, modern apps and websites with React.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tj/node-blocked&quot;&gt;tj/node-blocked&lt;/a&gt; (contribution): Check if the Node.js event loop is blocked.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/capnp-stream&quot;&gt;lmammino/capnp-stream&lt;/a&gt;: A Node.js readable stream for Cap’n Proto encoded binary input.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/fastify/fastify-http-proxy&quot;&gt;fastify/fastify-http-proxy&lt;/a&gt; (contribution): Proxy your http requests to another server, with hooks.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/benchmark-distributed-jwt-cracker&quot;&gt;lmammino/benchmark-distributed-jwt-cracker&lt;/a&gt;: A benchmark suite using AWS for distributed-jwt-cracker.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/metrica&quot;&gt;lmammino/metrica&lt;/a&gt;: Event Emitter based node library that emits process metrics (uptime, memory, cpu) at given intervals.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/zeek/zeek&quot;&gt;zeek/zeek&lt;/a&gt; (contribution): Zeek (formerly known as Bro) is a powerful network analysis framework that is much different from the typical IDS you may know.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/lambda-runtime-node8-capnp&quot;&gt;lmammino/lambda-runtime-node8-capnp&lt;/a&gt;: Docker container image that resembles AWS lambda runtime for Node.js 8.10 and CapnProto 0.6.1&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/lambda-runtime-node8&quot;&gt;lmammino/lambda-runtime-node8&lt;/a&gt;: Docker container image that resembles AWS lambda runtime for Node.js 8.10.0&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/openssl-rfc-mapping&quot;&gt;lmammino/openssl-rfc-mapping&lt;/a&gt;: A quick’n’dirty script to map OpenSSL RFC to machine parseable data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/stream-accumulator&quot;&gt;lmammino/stream-accumulator&lt;/a&gt;: Accumulate all the data flowing through a stream and emit it as a single chunk or as a promise.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maxogden/mississippi&quot;&gt;maxogden/mississippi&lt;/a&gt; (contribution): A collection of useful stream utility modules for writing better code using streams.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/lumpy&quot;&gt;lmammino/lumpy&lt;/a&gt;: A lumpy and dummy JavaScript module bundler for those who are stuck in the past.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/tick-stream&quot;&gt;lmammino/tick-stream&lt;/a&gt;: A simple transform stream that can log a tick every time data is pushed through a pipe.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nickjj/ansible-docker&quot;&gt;nickjj/ansible-docker&lt;/a&gt; (contribution): Install / Configure Docker and Docker Compose using Ansible.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jsdoc2md/dmd&quot;&gt;jsdoc2md/dmd&lt;/a&gt; (contribution): The default output template for jsdoc2md.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👍 Comparing last year (19) to this year (22) I had a +15.79% repo contributions increase. Another pretty good vanity metric!&lt;/p&gt;
+&lt;h2 id=&quot;previous-years-goals&quot;&gt;&lt;a href=&quot;#previous-years-goals&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Previous years goals&lt;/h2&gt;
+&lt;p&gt;Now it’s time to check whether I met &lt;a href=&quot;https://loige.co/2017-a-year-in-review#expectations-for-next-year&quot;&gt;the goals I set last year&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;MOAR conference talks/workshops (at least 8)&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;😭 &lt;strong&gt;Write at least 8 quality blog posts (excluding this one!)&lt;/strong&gt;: did only 5!&lt;/li&gt;
+&lt;li&gt;😐 &lt;strong&gt;Learn a lot about Security, Machine Learning and networking&lt;/strong&gt;: I guess I learned a bit, but probably not as much as I was expecting last year.&lt;/li&gt;
+&lt;li&gt;😐 &lt;strong&gt;Keep contributing to Fastify&lt;/strong&gt;: didn’t do a lot.&lt;/li&gt;
+&lt;li&gt;😐 &lt;strong&gt;Keep working on Middy&lt;/strong&gt;: Initially well, lately not so much…&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Move my blog to a static publishing engine and (possibly) use a serverless hosting approach&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;😐 &lt;strong&gt;Learn enough about Rust and build something with it&lt;/strong&gt;: studied for a while, but didn’t really build anything. I feel I kind of dropped it in favor of GoLang.&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Learn enough about Elastic Search and build something with it&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;😐 &lt;strong&gt;Learn enough about Kubernetes and build something with it&lt;/strong&gt;: Again, studied a bit but didn’t really do much with it.&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Do stuff with CSS Grids and Flexbox&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Keep learning AWS and serverless&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;😐 &lt;strong&gt;More serious and constant BJJ training&lt;/strong&gt;: kept training, but I should probably be more serious about it!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;expectations-for-next-year&quot;&gt;&lt;a href=&quot;#expectations-for-next-year&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Expectations for next year&lt;/h2&gt;
+&lt;p&gt;Ok, it’s finally time to move to the good intentions for the next year! I have been very long already so I’ll just sort this part out with a simple unordered checklist, I am already looking forward to seeing, in one year time, how many items will be crossed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep doing conference talks/workshops (at least 8)&lt;/li&gt;
+&lt;li&gt;Write at least 8 quality blog posts (excluding this one!)&lt;/li&gt;
+&lt;li&gt;Keep learning about Security, Machine Learning and networking&lt;/li&gt;
+&lt;li&gt;Release Middy v1.0&lt;/li&gt;
+&lt;li&gt;Publish a new book (or a new edition ✌️)&lt;/li&gt;
+&lt;li&gt;Get proficient in GoLang&lt;/li&gt;
+&lt;li&gt;Learn a bit about Social Media and digital marketing&lt;/li&gt;
+&lt;li&gt;Keep learning AWS and serverless&lt;/li&gt;
+&lt;li&gt;Get an advanced AWS certification&lt;/li&gt;
+&lt;li&gt;Play with new database technologies (e.g. CockroachDB &amp;#x26; Clickhouse)&lt;/li&gt;
+&lt;li&gt;Improve FullStack bulletin&lt;/li&gt;
+&lt;li&gt;More serious and constant BJJ training!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s all… If you are still reading, either you are a bot 🤖 or you are my new hero 💪!&lt;/p&gt;
+&lt;p&gt;In the latter case, I’d really love you to leave a comment here and let me know something about your 2018 and what you envision for your 2019.&lt;/p&gt;
+&lt;p&gt;See you in the next post, CIAO!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A random emoji in your terminal prompt. How and Why!]]></title><description><![CDATA[In this article, we will see how to customize our terminal prompt and add a random emoji in it. This is my terminal prompt: If I could have…]]></description><link>https://loige.co/random-emoji-in-your-prompt-how-and-why</link><guid isPermaLink="false">https://loige.co/random-emoji-in-your-prompt-how-and-why</guid><pubDate>Mon, 17 Dec 2018 18:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.co/static/random-emoji-in-your-prompt-how-and-why-fb-92ffbf9bb7ea19bc7d5042cbadef5651.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;In this article, we will see how to customize our terminal prompt and add a random emoji in it.&lt;/p&gt;
 &lt;p&gt;This is my terminal prompt:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
@@ -1567,7 +1853,7 @@ Tomas Della Vedova&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/matteocoll
 &lt;p&gt;👎 The total number of page views amounts to about 57.000 views, which compared to the previous year total of 90.000 is a dramatic decrease of 36.67%!&lt;/p&gt;
 &lt;p&gt;I guess I have to write more and find more interesting topics if I want to keep this blog relevant in 2018!&lt;/p&gt;
 &lt;h2 id=&quot;external-posts&quot;&gt;&lt;a href=&quot;#external-posts&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;External posts&lt;/h2&gt;
-&lt;p&gt;Aside from the articles published on my blog I had the pleasure to collaborate again with &lt;a href=&quot;https://scotch.io/&quot;&gt;Scotch.io&lt;/a&gt; and to establish a new collaboration with &lt;a href=&quot;&quot;&gt;Twilio&lt;/a&gt; to publish 2 posts as a guest author:&lt;/p&gt;
+&lt;p&gt;Aside from the articles published on my blog I had the pleasure to collaborate again with &lt;a href=&quot;https://scotch.io/&quot;&gt;Scotch.io&lt;/a&gt; and to establish a new collaboration with &lt;a href=&quot;https://www.twilio.com&quot;&gt;Twilio&lt;/a&gt; to publish 2 posts as a guest author:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://scotch.io/tutorials/create-a-custom-slack-slash-command-with-nodejs-and-express&quot;&gt;Create a custom Slack slash command with Node.js and Express&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.twilio.com/blog/2017/12/automated-sms-notifications-aws-lambda-javascript-twilio-sms-apis.html&quot;&gt;Automated SMS Notifications with AWS Lambda, JavaScript and Twilio SMS&lt;/a&gt;&lt;/li&gt;
