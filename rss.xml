@@ -1,4 +1,455 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Web developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige, Web developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 20 Jan 2019 02:20:19 GMT</lastBuildDate><item><title><![CDATA[2018 - A year in review]]></title><description><![CDATA[It is that time of the year when I have to look back at the previous year and see what were my achievements, my failures and set my…]]></description><link>https://loige.co/2018-a-year-in-review</link><guid isPermaLink="false">https://loige.co/2018-a-year-in-review</guid><pubDate>Sun, 20 Jan 2019 02:18:58 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.co/static/2018-a-year-in-review-fb-810834c3898f8d0697413fe667cb5205.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;It is that time of the year when I have to look back at the previous year and see what were my achievements, my failures and set my expectations for my 2019.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Web developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige, Web developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 21 Jan 2019 03:29:32 GMT</lastBuildDate><item><title><![CDATA[JavaScript iterator patterns]]></title><description><![CDATA[In this article we will explore different ways to create iterators and iterable
+values in Javascript, specifically  functions ,  iterators…]]></description><link>https://loige.co/javascript-iterator-patterns</link><guid isPermaLink="false">https://loige.co/javascript-iterator-patterns</guid><pubDate>Mon, 21 Jan 2019 03:25:58 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.co/static/javascript-iterator-patterns-fb-1f2a1163e60f7de1a013f6604610b0e5.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;In this article we will explore different ways to create iterators and iterable
+values in Javascript, specifically &lt;strong&gt;functions&lt;/strong&gt;, &lt;strong&gt;iterators&lt;/strong&gt;, &lt;strong&gt;iterables&lt;/strong&gt;
+and &lt;strong&gt;generators&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;JavaScript is a very flexible language and most often you can achieve the same goals
+in many different ways, iterators are no exception!&lt;/p&gt;
+&lt;p&gt;Wikipedia defines iterators as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In computer programming, an iterator is an object that enables a programmer
+to traverse a container, particularly lists. Various types of iterators are
+often provided via a container’s interface.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We will extend this definition even further as we will not focus on building
+iterators for pre-computed values like lists, but we will see how to iterate over
+generative sequences like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Fibonacci_number&quot;&gt;Fibonacci sequence&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Most likely you won’t be using the Fibonacci sequence in your day to day programming
+(unless you are interviewing for some company who wants to validate your knowledge
+of recursion 😆), but the idea of generating a sequence of values on demand
+(lazy evaluation) translates well to a lot of real-life scenarios like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;traversing custom data structures&lt;/li&gt;
+&lt;li&gt;consuming paginated APIs&lt;/li&gt;
+&lt;li&gt;draining a queue&lt;/li&gt;
+&lt;li&gt;processing long files line by line&lt;/li&gt;
+&lt;li&gt;read all the records from a SQL table&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;the-fibonacci-sequence&quot;&gt;&lt;a href=&quot;#the-fibonacci-sequence&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Fibonacci sequence&lt;/h2&gt;
+&lt;p&gt;In case you have never seen the Fibonacci sequence before (or you don’t remember
+the exact definition), here is how it looks like:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;plain&quot;&gt;&lt;pre class=&quot;language-plain&quot;&gt;&lt;code class=&quot;language-plain&quot;&gt;1 1 2 3 5 8 13 21 ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Essentially, a number in the sequence is given by the sum of the previous 2 numbers.&lt;/p&gt;
+&lt;p&gt;In more formal mathematical terms, you can define the sequence as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;F&lt;sub&gt;1&lt;/sub&gt; = F&lt;sub&gt;2&lt;/sub&gt; = 1&lt;br&gt;
+F&lt;sub&gt;n&lt;/sub&gt; = F&lt;sub&gt;(n-1)&lt;/sub&gt; + F&lt;sub&gt;(n-2)&lt;/sub&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Few things to notice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The sequence is infinite (it would be impossible to store it in a list without an upper limit).&lt;/li&gt;
+&lt;li&gt;It is made by positive integers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, how do we write some JavaScript code that allows us to iterate over this sequence and
+calculate an arbitrary number of elements?&lt;/p&gt;
+&lt;p&gt;Well, there are many ways…&lt;/p&gt;
+&lt;h2 id=&quot;functions&quot;&gt;&lt;a href=&quot;#functions&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Functions&lt;/h2&gt;
+&lt;p&gt;In JavaScript, functions are first class citizens and most patterns can be modeled
+with the use of only plain functions. This will become natural once you master
+the concepts of &lt;em&gt;function scope&lt;/em&gt;, &lt;em&gt;anonymous functions&lt;/em&gt; and &lt;em&gt;nested functions&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So, how can we build a fibonacci sequence by using only functions?&lt;/p&gt;
+&lt;p&gt;Here’s an example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;genFib&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Number&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MAX_SAFE_INTEGER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// initialize default values in the scope&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// returns an anonymous function that will return the next element&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// every time that it is called&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// calculates the next value&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n2
+
+    &lt;span class=&quot;token comment&quot;&gt;// redefines n1 and n2 to match new values&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prevVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2
+    n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nextVal
+    n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prevVal
+
+    &lt;span class=&quot;token comment&quot;&gt;// if we reached the upper bound return null (iteration completed)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nextVal &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// return the new value&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; nextVal
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I added some comments to make the code easy to understand, but let’s go through it
+once more.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;genFib&lt;/code&gt; is a function that accepts an optional parameter, which is the upper bound
+used to define when to stop computing elements in the sequence. JavaScript numbers
+starts to lose precision after &lt;code class=&quot;language-text&quot;&gt;Number.MAX_SAFE_INTEGER&lt;/code&gt;, so this is a sensible default.&lt;/li&gt;
+&lt;li&gt;The first thing that happens in the function is initializing the function scope.
+&lt;code class=&quot;language-text&quot;&gt;n1&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;n2&lt;/code&gt; are the only two values that we need to compute an element of
+the sequence. They represent the last 2 numbers computed. We set them to &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt; by default.&lt;/li&gt;
+&lt;li&gt;At this point the function returns an anonymous function. This function can be
+invoked an arbitrary number of times and every time it will compute and return
+a new element in the sequence, making sure the internal state is updated accordingly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Notice that &lt;code class=&quot;language-text&quot;&gt;genFib&lt;/code&gt; will initizalize a new isolated scope containing &lt;code class=&quot;language-text&quot;&gt;n1&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;n2&lt;/code&gt;.
+These values will be accessible (and modifiable) only by the anonymous function returned
+by &lt;code class=&quot;language-text&quot;&gt;genFib&lt;/code&gt;. This means that you can generate multiple “iterators” and everyone of them
+will be independent from each other.&lt;/p&gt;
+&lt;p&gt;To understand this even better let’s see an example on how a user would use this code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; f &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;genFib&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// limit the sequence to numbers below 6&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 2&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 3&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 5&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// null&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// null&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// null&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// or with a loop&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// prints all the numbers of the sequence below MAX_SAFE_INTEGER&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; f2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;genFib&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; current
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;f2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;the-iterator-protocol&quot;&gt;&lt;a href=&quot;#the-iterator-protocol&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Iterator protocol&lt;/h2&gt;
+&lt;p&gt;In the previous example we came up with our own way to define how to iterate through
+the elements (returned anonymous function) and how to understand whether the sequence
+was over (return of &lt;code class=&quot;language-text&quot;&gt;null&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ECMAScript 2015&lt;/strong&gt; provides a standard and interoperable way to define iterator
+objects. This is called &lt;strong&gt;the Iterator protocol&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In short, a JavaScript object is &lt;em&gt;an iterator&lt;/em&gt; if it implements a &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt;
+method with the following semantic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; does not accept any argument.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; has to return an object with 2 properties: &lt;code class=&quot;language-text&quot;&gt;done&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;value&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;done&lt;/code&gt; is a boolean and it will be set to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt; only and only if there are no
+more elements in the sequence.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;value&lt;/code&gt; will contain the actual value as computed in the last iteration
+(could be &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; when &lt;code class=&quot;language-text&quot;&gt;done&lt;/code&gt; is &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ok, now let’s rewrite our Fibonacci sequence to implement the Iterator protocol:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;genFibIterator&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Number&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MAX_SAFE_INTEGER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// this time we return an iterator object (rather than a function)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// the logic needed to compute the next element is inside the `next` method&lt;/span&gt;
+    next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// calculates the next value&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n2
+
+      &lt;span class=&quot;token comment&quot;&gt;// redefines n1 and n2 to match new values&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prevVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2
+      n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nextVal
+      n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prevVal
+
+      &lt;span class=&quot;token comment&quot;&gt;// if we reached the upper bound (iteration completed)&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// set done to true and nextVal to undefined&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; done &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nextVal &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+        done &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;token comment&quot;&gt;// return the iteration object as for the iteration protocol&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nextVal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The comments in the code should help you to understand the new logic.&lt;/p&gt;
+&lt;p&gt;Let’s see how to use our new Fibonacci iterator implementation:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; it &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;genFibIterator&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { next: [Function: next] }&lt;/span&gt;
+it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 1, done: false }&lt;/span&gt;
+it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 1, done: false }&lt;/span&gt;
+it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 2, done: false }&lt;/span&gt;
+it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 3, done: false }&lt;/span&gt;
+it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 5, done: false }&lt;/span&gt;
+it&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { done: true }&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// or&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; it2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;genFibIterator&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; it2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;done&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; it2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 2&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 3&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;the-iterable-protocol&quot;&gt;&lt;a href=&quot;#the-iterable-protocol&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Iterable protocol&lt;/h2&gt;
+&lt;p&gt;In the previous section we saw how to define &lt;strong&gt;Iterator objects&lt;/strong&gt; that conform
+the Iterator protocol. In reality, we might want to express the concept of
+“iterability” in a more generic fashion, so that, given any object, we can tell if
+such object is iterable or not.&lt;/p&gt;
+&lt;p&gt;For this reason, ECMAScript 2015 defines also the &lt;strong&gt;Iterable protocol&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;An object is said to be &lt;em&gt;iterable&lt;/em&gt; if it exposes a property called &lt;code class=&quot;language-text&quot;&gt;Symbol.iterable&lt;/code&gt;,
+which is a function that returns an &lt;em&gt;iterator&lt;/em&gt; object.&lt;/p&gt;
+&lt;p&gt;You can introspectively check if an object is &lt;em&gt;iterable&lt;/em&gt; with some code like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;isIterable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Boolean&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;function&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ECMAScript 2015 also provides a new &lt;code class=&quot;language-text&quot;&gt;for&lt;/code&gt; construct (&lt;code class=&quot;language-text&quot;&gt;for...of&lt;/code&gt;) that allows to
+easily iterate over the elements of an iterable object:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; current &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; someIterable&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Iterable objects can also be used in combination with the &lt;strong&gt;spread operator&lt;/strong&gt; to
+eagerly load all the values and store them into an array:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; allValues &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;someIterable&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ok, now let’s rewrite our Fibonacci sequence to implement the Iterable protocol:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;genFibIterable&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Number&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MAX_SAFE_INTEGER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// returns an iterable object&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// returns an iterator&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n2
+
+          &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prevVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2
+          n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nextVal
+          n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prevVal
+
+          &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; done &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nextVal &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+            done &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nextVal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What we did here is to just move the implementation of the iterator seen in the
+previous section into the &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;Note that it is possible to come up with an implementation that can satisfy the Iterator and the Iterable protocols
+at the same time :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;genFib&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Number&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MAX_SAFE_INTEGER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// this satisfies the Iterator protocol&lt;/span&gt;
+    next&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n2
+
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prevVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2
+      n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nextVal
+      n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prevVal
+
+      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; done &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nextVal &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+        done &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; nextVal&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; done &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// this satisfies the Iterable protocol&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Symbol&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iterator&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// returns `this` because the object itself is an iterator&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The comments in the code should help you to understand the logic in these 2
+implementations.&lt;/p&gt;
+&lt;p&gt;With this new approaches you can generate numbers from the Fibonacci sequence as
+follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// prints all the numbers in the sequence until MAX_SAFE_INTEGER&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; f &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;genFibIterable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; f&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// creates an array with all the Fibonacci numbers lower than 17&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; f2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;genFibIterable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; lowerThan17 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;f2&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [ 1, 1, 2, 3, 5, 8, 13 ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If at this point you are still struggling to see the logical difference between
+an &lt;em&gt;iterator&lt;/em&gt; and an &lt;em&gt;iterable&lt;/em&gt; object you can see it this way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An &lt;em&gt;iterable&lt;/em&gt; is an object on which you can iterate over.&lt;/li&gt;
+&lt;li&gt;An &lt;em&gt;iterator&lt;/em&gt; is a cursor object that allows you to iterate over an &lt;em&gt;iterable&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;generators&quot;&gt;&lt;a href=&quot;#generators&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generators&lt;/h2&gt;
+&lt;p&gt;Another great addition coming from ECMAScript 2015 to JavaScript are &lt;strong&gt;Generators&lt;/strong&gt;.
+More specifically, ECMAScript 2015 defines &lt;strong&gt;Generator functions&lt;/strong&gt; and &lt;strong&gt;Generator objects&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;code class=&quot;language-text&quot;&gt;function*&lt;/code&gt; declaration (function keyword followed by an asterisk) defines
+a &lt;em&gt;Generator function&lt;/em&gt;, which returns a &lt;em&gt;Generator object&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Generators are functions which can be exited and later re-entered.
+Their context (variable bindings) will be saved across re-entrances.&lt;/p&gt;
+&lt;p&gt;To simplify this concept a bit, you can see generator functions as functions that
+can “return” (or ”&lt;em&gt;yield&lt;/em&gt;”) multiple times.&lt;/p&gt;
+&lt;p&gt;Let’s explore the generator syntax with a simple example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// generator function&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;countTo3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this example we are defining a &lt;code class=&quot;language-text&quot;&gt;counter&lt;/code&gt; that generates numbers from 1 to 3.
+We can use it as follows:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// c is a generator object&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;countTo3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 1, done: false }&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 2, done: false }&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 3, done: true }&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { done: true }&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { done: true }&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So, the way a generator works is the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you invoke a &lt;em&gt;generator function&lt;/em&gt;, a &lt;em&gt;generator object&lt;/em&gt; is returned.&lt;/li&gt;
+&lt;li&gt;Generator objects have a &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; method.&lt;/li&gt;
+&lt;li&gt;When you invoke the &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; method of a &lt;em&gt;generator object&lt;/em&gt; the code of the
+generator will be executed until the first &lt;code class=&quot;language-text&quot;&gt;yield&lt;/code&gt; (or &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt;) is encountered.&lt;/li&gt;
+&lt;li&gt;If a &lt;code class=&quot;language-text&quot;&gt;yield&lt;/code&gt; was found, the code is stopped and the yielded value will be passed
+to the invoking context though an object with the following shape: &lt;code class=&quot;language-text&quot;&gt;{ value: &amp;lt;yieldedValue&amp;gt;, done: false }&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The next time &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; is invoked, the execution will be resumed from the point
+where it was initially suspended until a new &lt;code class=&quot;language-text&quot;&gt;yield&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; is found.&lt;/li&gt;
+&lt;li&gt;If a &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; statement is found (or the function completes), the object
+returned will look like: &lt;code class=&quot;language-text&quot;&gt;{ value: &amp;lt;returnedValue&amp;gt;, done: true }&lt;/code&gt;
+(notice the &lt;code class=&quot;language-text&quot;&gt;done&lt;/code&gt; now set to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Consecutive calls to &lt;code class=&quot;language-text&quot;&gt;next()&lt;/code&gt; will always produce &lt;code class=&quot;language-text&quot;&gt;{ done: true }&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, the reason why we are exploring this topic is because we can implement
+our Fibonacci sequence as a generator:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Fib&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Number&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MAX_SAFE_INTEGER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// initialize the state variables&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// we can now pre-initialize nextVal to 1 as part of the state&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// loop until we exceed the max number&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nextVal &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; max&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// yields the current value&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; nextVal
+
+    &lt;span class=&quot;token comment&quot;&gt;// shifts nextVal -&gt; n2 and n2 -&gt; n1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prevVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n2
+    n2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; nextVal
+    n1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; prevVal
+
+    &lt;span class=&quot;token comment&quot;&gt;// calculates the next value&lt;/span&gt;
+    nextVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; n1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; n2
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The comments in the code should help you with understanding this implementation.&lt;/p&gt;
+&lt;p&gt;You can immediately notice that since we don’t have to deal with a &lt;em&gt;nested function&lt;/em&gt;,
+the implementation seems easier to read, or at least it might feel easier to read
+the code and understand the actual execution flow.&lt;/p&gt;
+&lt;p&gt;For this reason, you might prefer to use generators over plain functions in this
+kind of scenarios.&lt;/p&gt;
+&lt;p&gt;We can use our new generator-based Fibonacci sequence as in this example:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fib &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Fib&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+fib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 1, done: false }&lt;/span&gt;
+fib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 1, done: false }&lt;/span&gt;
+fib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 2, done: false }&lt;/span&gt;
+fib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 3, done: false }&lt;/span&gt;
+fib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { value: 5, done: false }&lt;/span&gt;
+fib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { done: true }&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// or&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fib2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Fib&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fib2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;done&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fib2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 2&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 3&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At this point you might be wandering:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is a generator object an iterator or an iterable?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Well, it turns out that &lt;strong&gt;a generator object is both an iterator and iterable&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;So you can also use our latest implementation with the &lt;code class=&quot;language-text&quot;&gt;for...of&lt;/code&gt; and the &lt;em&gt;spread&lt;/em&gt;
+syntax:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fib &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Fib&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; current &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; fib&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 2&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 3&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 5&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// or&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fib2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Fib&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;fib2&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [ 1 1 2 3 5 ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally, since generators are &lt;em&gt;iterators&lt;/em&gt;, you can use them as &lt;code class=&quot;language-text&quot;&gt;Symbol.iterator&lt;/code&gt;
+property of an &lt;em&gt;iterable object&lt;/em&gt;. This could help you to define the iteration logic
+in a more elegant and concise way, taking advantage of the &lt;code class=&quot;language-text&quot;&gt;yield&lt;/code&gt; keyword.&lt;/p&gt;
+&lt;p&gt;To some extent, you can see generators as a syntactic sugar to define iterable objects.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this article we learned about different ways to generate dynamic sequences using
+plain functions, iterators, iterables and generators.&lt;/p&gt;
+&lt;p&gt;Notice that these approaches are ideal when the operation needed to generate the
+next element is synchronous (it doesn’t require external resources to be
+loaded asynchronously).&lt;/p&gt;
+&lt;p&gt;When you have to iterate over values that become available asynchronously you
+have to rely on different patterns such as
+&lt;a href=&quot;https://nodejs.org/api/events.html&quot;&gt;&lt;strong&gt;event emitters&lt;/strong&gt;&lt;/a&gt;,
+&lt;a href=&quot;https://nodejs.org/api/stream.html&quot;&gt;&lt;strong&gt;streams&lt;/strong&gt;&lt;/a&gt;, or
+&lt;a href=&quot;https://github.com/tc39/proposal-async-iteration&quot;&gt;&lt;strong&gt;async iterators&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, notice that generators have some interesting advanced features not covered
+in this article, like the opportunity to pass new values in the context every
+time &lt;code class=&quot;language-text&quot;&gt;.next()&lt;/code&gt; is called or to throw exceptions, so make sure you checkout
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator&quot;&gt;the generators documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you liked this article and you are interested in similar content, be sure
+to checkout my book &lt;strong&gt;&lt;a href=&quot;https://www.nodejsdesignpatterns.com&quot;&gt;Node.js Design Patterns&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.nodejsdesignpatterns.com&quot;&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 200px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 123%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAVIpZzqQUw7swHrUJZJ//8QAHBAAAgIDAQEAAAAAAAAAAAAAAQMAAhESMhAU/9oACAEBAAEFAqiurBgwpNSU5nz1havcsoZtQeJ7d3//xAAZEQACAwEAAAAAAAAAAAAAAAAAAQISIRH/2gAIAQMBAT8BqVI6yWPh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECEiH/2gAIAQIBAT8BsWJYiOo//8QAHxAAAQMDBQAAAAAAAAAAAAAAAAECERIhIhAgMTJR/9oACAEBAAY/Aks3jwtpTW4u5TsLkhCOlTJ0bP/EAB0QAQACAQUBAAAAAAAAAAAAAAEAESEQMVFxsYH/2gAIAQEAAT8hynsKEACg3L0FD4O0pU84WMVoKkJgV2QxDXF6eM8p/9oADAMBAAIAAwAAABDXxw//xAAYEQEBAAMAAAAAAAAAAAAAAAABABFRcf/aAAgBAwEBPxDPZdkgxmKL/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARcf/aAAgBAgEBPxDhuG0iQxW//8QAIRABAAIBAwQDAAAAAAAAAAAAAREhADFhsRBBUXGBkcH/2gAIAQEAAT8QmE5Cs9rWSn3mtLg4L4vorJAMV9hxjWoTbPqN8l2B2cc9ujuSJxhEuXBB4+MlSFrwdObmj6/uf//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/node-js-design-patterns-cb588b738a90b17740d5c8fd47777e73-deef6.webp 200w&quot;
+          sizes=&quot;(max-width: 200px) 100vw, 200px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/node-js-design-patterns-cb588b738a90b17740d5c8fd47777e73-54e01.jpg 200w&quot;
+          sizes=&quot;(max-width: 200px) 100vw, 200px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+          src=&quot;/static/node-js-design-patterns-cb588b738a90b17740d5c8fd47777e73-54e01.jpg&quot;
+          alt=&quot;Node.js Design Patterns Second Edition by Mario Casciaro and Luciano Mammino&quot;
+          title=&quot;&quot;
+          src=&quot;/static/node-js-design-patterns-cb588b738a90b17740d5c8fd47777e73-54e01.jpg&quot;
+        /&gt;
+      &lt;/picture&gt;
+      &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This book contains more than 500 pages, filled with more than 100 examples on
+Node.js (and JavaScript) design patterns. I am sure you won’t be disappointed!&lt;/p&gt;
+&lt;p&gt;Have fun! :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2018 - A year in review]]></title><description><![CDATA[It is that time of the year when I have to look back at the previous year and see what were my achievements, my failures and set my…]]></description><link>https://loige.co/2018-a-year-in-review</link><guid isPermaLink="false">https://loige.co/2018-a-year-in-review</guid><pubDate>Sun, 20 Jan 2019 02:18:58 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.co/static/2018-a-year-in-review-fb-810834c3898f8d0697413fe667cb5205.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;It is that time of the year when I have to look back at the previous year and see what were my achievements, my failures and set my expectations for my 2019.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Full disclosure&lt;/strong&gt;: I write this type of posts mostly for myself, so I expect this to be
 boring to death and most likely useless for everyone else.&lt;/p&gt;
 &lt;p&gt;You have been warned, read at your own risk!&lt;/p&gt;
