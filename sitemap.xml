@@ -119,6 +119,6 @@
 <url> <loc>https://loige.cotag/backup/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/dropbox/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cospeaking/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://loige.coabout</loc> <changefreq>monthly</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://loige.cocomment-policy</loc> <changefreq>monthly</changefreq> <priority>0.2</priority> </url>
+<url> <loc>https://loige.coabout</loc> <changefreq>monthly</changefreq> <priority>0.7</priority> </url>
 </urlset>
