@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://loige.comiddy-1-is-here/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://loige.co2019-a-year-in-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://loige.colean-npm-packages/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://loige.cofastify-and-preact-for-quick-web-app-prototyping/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -54,9 +55,10 @@
 <url> <loc>https://loige.copage/3/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.copage/4/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.copage/5/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://loige.cotag/life/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://loige.cotag/javascript/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://loige.cotag/serverless/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/node-js/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://loige.cotag/javascript/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://loige.cotag/life/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/npm/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/fastify/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/react/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
@@ -67,7 +69,6 @@
 <url> <loc>https://loige.cotag/lua/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/go/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/aws/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://loige.cotag/serverless/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/ssl/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/web/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://loige.cotag/terraform/</loc> <changefreq>daily</changefreq> <priority>0.5</priority> </url>
