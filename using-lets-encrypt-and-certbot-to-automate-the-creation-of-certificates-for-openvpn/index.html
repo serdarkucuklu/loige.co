@@ -383,7 +383,7 @@ USERDATA</span>
 
 <span class="token keyword">resource <span class="token type variable">"null_resource"</span></span> <span class="token string">"provision_openvpn"</span> <span class="token punctuation">{</span>
   <span class="token keyword">triggers</span> <span class="token punctuation">{</span>
-    <span class="token property">subdomain_id</span> <span class="token punctuation">=</span> <span class="token string">"<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span>aws_route<span class="token number">53</span>_record<span class="token punctuation">.</span>vpn<span class="token punctuation">.</span>id<span class="token punctuation">}</span></span>"</span>
+    <span class="token property">subdomain_id</span> <span class="token punctuation">=</span> <span class="token string">"<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span>aws_route53_record<span class="token punctuation">.</span>vpn<span class="token punctuation">.</span>id<span class="token punctuation">}</span></span>"</span>
   <span class="token punctuation">}</span>
 
   <span class="token keyword">connection</span> <span class="token punctuation">{</span>
