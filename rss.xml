@@ -1,4 +1,158 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Cloud developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige: Cloud developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Oct 2020 10:23:19 GMT</lastBuildDate><item><title><![CDATA[Middy 1.0.0 is here]]></title><description><![CDATA[Middy, the Node.js middleware framework for AWS Lambda, has finally graduated to 1.0.0! A long awaited milestone for the project. In this…]]></description><link>https://loige.co/middy-1-is-here</link><guid isPermaLink="false">https://loige.co/middy-1-is-here</guid><pubDate>Sun, 26 Apr 2020 15:25:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/0a5bf32109b158b73497b24e4e7bc6aa/middy-1-is-here-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;Middy, the Node.js middleware framework for AWS Lambda, has finally graduated to 1.0.0! A long awaited milestone for the project.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Cloud developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige: Cloud developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Oct 2020 07:58:45 GMT</lastBuildDate><item><title><![CDATA[What's in a JWT (Json Web Token)?]]></title><description><![CDATA[If you ended up on this article, chances are that you have been seeing JWTs (Json Web Tokens) for a while and you are curious to find out…]]></description><link>https://loige.co/whats-in-a-jwt</link><guid isPermaLink="false">https://loige.co/whats-in-a-jwt</guid><pubDate>Mon, 05 Oct 2020 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;undefined&quot;/&gt;&lt;/p&gt;&lt;p&gt;If you ended up on this article, chances are that you have been seeing JWTs (Json Web Tokens) for a while and you are curious to find out what they really are, what’s inside of them and how they actually work! Why did they get so mainstream anyway?! 🤔&lt;/p&gt;
+&lt;p&gt;In this article we will be trying to address this topic in a short but (hopefully) effective fashion!&lt;/p&gt;
+&lt;h2 id=&quot;its-just-a-string-with-a-well-defined-format&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#its-just-a-string-with-a-well-defined-format&quot; aria-label=&quot;its just a string with a well defined format permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;It’s just a string with a well-defined format&lt;/h2&gt;
+&lt;p&gt;JWT stands for &lt;em&gt;JSON Web Token&lt;/em&gt; and such a token is just a string composed by 3 parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a &lt;strong&gt;header&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;a &lt;strong&gt;body&lt;/strong&gt; (sometimes also referred to as &lt;strong&gt;payload&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;a cryptographic &lt;strong&gt;signature&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s have a look at a more concrete example, a JWT looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6ImZyb20gSldUIn0.XoByFQCJvii_iOTO4xlz23zXmb4yuzC3gqrWNt3EHrg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The three parts are separated by a &lt;code&gt;.&lt;/code&gt; (dot) character:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;header: &lt;code&gt;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;body: &lt;code&gt;eyJoZWxsbyI6ImZyb20gSldUIn0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;signature: &lt;code&gt;XoByFQCJvii_iOTO4xlz23zXmb4yuzC3gqrWNt3EHrg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Header and Body are JSON strings (yeah, that’s why the are called &lt;em&gt;JSON&lt;/em&gt; web tokens…). This is somewhat hidden, because those two strings are encoded using the &lt;a href=&quot;https://tools.ietf.org/html/rfc4648#section-5&quot;&gt;Base64Url&lt;/a&gt; algorithm (a URL-safe variation of the standard Base64 encoding algorithm).&lt;/p&gt;
+&lt;p&gt;If we decode them this is what we get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;header: &lt;code&gt;{ &quot;alg&quot;: &quot;HS256&quot;, &quot;typ&quot;: &quot;JWT&quot; }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;body: &lt;code&gt;{ &quot;hello&quot;: &quot;from JWT&quot; }&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Which now looks like proper JSON!&lt;/p&gt;
+&lt;p&gt;The signature part contains raw bytes which represent a cryptographic signature of header and body. The signature is also encoded using Base64Url and it can be used to verify the authenticity of a token.&lt;/p&gt;
+&lt;p&gt;If you try to decode the signature and visualize it a s UTF-8 string you will probably see some rubbish like this:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 789px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 14.453125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAgUlEQVQI1yWNyw7CIBBF+f+9xn+wsTu7GRf0oVH/gL1dlybQEqbgZTiE4WQyl1E5Z2ZOKe1gKyzWogPZBe893DkHQYVH5iwo3BCCXddxHAp9fzpfjDHdvfu8v6/peWtbInoQXQuN1vo3z0hhn6p/wA4h4fCBzTHG2mQBLm8ZATX1BxHMpdESMlwKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/4b3979a64258f7998823b9a575110b43/8d3d1/jwt-signature-decoded-to-string.webp 256w,
+/static/4b3979a64258f7998823b9a575110b43/354cf/jwt-signature-decoded-to-string.webp 512w,
+/static/4b3979a64258f7998823b9a575110b43/b314b/jwt-signature-decoded-to-string.webp 789w&quot;
+          sizes=&quot;(max-width: 789px) 100vw, 789px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/4b3979a64258f7998823b9a575110b43/85b06/jwt-signature-decoded-to-string.png 256w,
+/static/4b3979a64258f7998823b9a575110b43/bc282/jwt-signature-decoded-to-string.png 512w,
+/static/4b3979a64258f7998823b9a575110b43/448f2/jwt-signature-decoded-to-string.png 789w&quot;
+          sizes=&quot;(max-width: 789px) 100vw, 789px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/4b3979a64258f7998823b9a575110b43/448f2/jwt-signature-decoded-to-string.png&quot;
+          alt=&quot;An attempt to try to decode a JWT signature to a UTF-8 string&quot;
+          title=&quot;An attempt to try to decode a JWT signature to a UTF-8 string&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Again, this is because the signature just contains raw bytes which do not represent a valid UTF-8 string. So yeah, there is no point in trying to decode and visualize a signature. 🤗&lt;/p&gt;
+&lt;h2 id=&quot;when-are-jwts-useful&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#when-are-jwts-useful&quot; aria-label=&quot;when are jwts useful permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;When are JWTs useful&lt;/h2&gt;
+&lt;p&gt;JWTs are mostly used as a mechanism for “stateless” claims exchange. We can define a claim as some piece of information that we want to certify and propagate through various systems. &lt;/p&gt;
+&lt;p&gt;A good example is authentication and authorization, were our claims could be information about the user session (user id, roles, etc). Let’s try to discuss this example with a (rather crappy) illustration:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.96875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABNUlEQVQoz3VRi07EIBDk/3/CxPgVxvgPaoynZ3rXXp+0vStQWKDLIj01uRhvMiGQ3WGGhcV/gT4GT1ZSjCsXIHSRwsozvPdCCGatVfOstQEAYyCEtUzoyZvotQOF3pJTAQRZRb/i1Jb07DRN+6Io63qf513H0x0RXXCanAQtNpvnIt+GJeklWUF+Pkf5Abt/eGw7fpymfhh5P4B132Wj564pXt/fen5QYkQkxCWG5fJx7PbmbrfbW+cQ0ZyR8jjvO947a1NAIcxHdvrMTdXaeOmbxBXv8YyyLJu2Teac97ssa9oGVnHEQGkUBtD58GesbASbmgJRXZWQvejtE+Qbxw/QFuY4jMNARPEKGFc6ZU47B6DaUveNaA6K13PfyLRKGa+DVV0npfo+JItwQaSrrulfp2n6AqNEB5LuPwgRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6eb61dea272265fdc80f2818256e429f/8d3d1/jwt-auth-part-1-loige.webp 256w,
+/static/6eb61dea272265fdc80f2818256e429f/354cf/jwt-auth-part-1-loige.webp 512w,
+/static/6eb61dea272265fdc80f2818256e429f/44907/jwt-auth-part-1-loige.webp 1024w,
+/static/6eb61dea272265fdc80f2818256e429f/8cac3/jwt-auth-part-1-loige.webp 1349w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6eb61dea272265fdc80f2818256e429f/85b06/jwt-auth-part-1-loige.png 256w,
+/static/6eb61dea272265fdc80f2818256e429f/bc282/jwt-auth-part-1-loige.png 512w,
+/static/6eb61dea272265fdc80f2818256e429f/f1720/jwt-auth-part-1-loige.png 1024w,
+/static/6eb61dea272265fdc80f2818256e429f/25966/jwt-auth-part-1-loige.png 1349w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/6eb61dea272265fdc80f2818256e429f/f1720/jwt-auth-part-1-loige.png&quot;
+          alt=&quot;John authenticating against an Auth server and getting back a JWT&quot;
+          title=&quot;John authenticating against an Auth server and getting back a JWT&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.828125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABrElEQVQoz21S7W6jMBDk/d+jP/oSp6t6laJWqdQm7YVrescBCdgYMDaEL8PcGiU50tbSCNu7O96dwRnHEV8tez+Pzc+HuoJWArUWqIr9hLYp0XUdnHnBx/1EMgyXsa6GlD688Bkq2ULyLZR4h6kiKFXAkUUBxhPwJME+iggx0jRDzDgEfW2cJwJRzNC2DSLmQsQbBMEasf8CvtsgjVy0KkBPjzm2OMtyKK2hyxIFEaRZhoQzpAQex9gFPuVkRNhCaw62+4Vk50JnHvoyJAQwhKZK/4/8/eYWV1fXU2EiBGTwG/l2jfzvG2To4aAVjBmwDwO8v/0EZ3uUWqLSKUyr0B4kxXs4A2lk12LxgOX9curCruGonYU55vzxt7i7v8FqtZpkslMZYy7MdE6CN10PUVb46PrpPJgRi+Utfjx8w8vrKzgRllU1PYzjwxZnQl3X4LqkhPGT6wkZZmV4Xq/w+PSIjesiy/OL7j4RprKAT872fX9OKMkkQUSe54ExNnVlEYYhjcyRE6mNz4mdk16Tw0qhbpozYUP7isaqqfs57J2FJg3tXzHpTKRSSvwDoqT+s56O2g8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/e863c139ace725bbb4b814cd09912823/8d3d1/jwt-auth-part-2-loige.webp 256w,
+/static/e863c139ace725bbb4b814cd09912823/354cf/jwt-auth-part-2-loige.webp 512w,
+/static/e863c139ace725bbb4b814cd09912823/44907/jwt-auth-part-2-loige.webp 1024w,
+/static/e863c139ace725bbb4b814cd09912823/04abd/jwt-auth-part-2-loige.webp 1315w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/e863c139ace725bbb4b814cd09912823/85b06/jwt-auth-part-2-loige.png 256w,
+/static/e863c139ace725bbb4b814cd09912823/bc282/jwt-auth-part-2-loige.png 512w,
+/static/e863c139ace725bbb4b814cd09912823/f1720/jwt-auth-part-2-loige.png 1024w,
+/static/e863c139ace725bbb4b814cd09912823/de2c1/jwt-auth-part-2-loige.png 1315w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/e863c139ace725bbb4b814cd09912823/f1720/jwt-auth-part-2-loige.png&quot;
+          alt=&quot;John using his JWT to communicate with the pizza service&quot;
+          title=&quot;John using his JWT to communicate with the pizza service&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In this picture:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;John is authenticating against an auth server. The auth server recognizes his credentials and gives him back a token&lt;/li&gt;
+&lt;li&gt;John can now use the token to connect to specific services, for instance the pizza service.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Every time John makes a request to a service, he will need to attach his token to the request. The service can look at the token to understand if the request can be authorized. The service can read the information embedded within the token to understand that the request is coming from John and can verify that the signature was applied by the Auth server.&lt;/p&gt;
+&lt;p&gt;This process is “stateless” because this validation can be done without having to make an explicit request to the Auth server. Of course every service needs to know the Auth server public key to be able to validate the token signature.&lt;/p&gt;
+&lt;p&gt;A stateless mechanism like this, is great for distributed systems or, in general, systems that deal with a high load of requests.&lt;/p&gt;
+&lt;p&gt;Authentication is not the only use case for JWT. For instance a JWT can also be used to generate confirmation links like “confirm your subscription to this newsletter” or to generate “password reset links”.&lt;/p&gt;
+&lt;h2 id=&quot;now-you-can-be-nosy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#now-you-can-be-nosy&quot; aria-label=&quot;now you can be nosy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Now you can be nosy&lt;/h2&gt;
+&lt;p&gt;Now that you know how a JWT token is made you can start to be nosy and look into the JWT tokens you bump into.&lt;/p&gt;
+&lt;p&gt;You can copy-paste tokens into &lt;a href=&quot;https://jwt.io&quot;&gt;jwt.io&lt;/a&gt; or use a command-line tool like &lt;a href=&quot;https://github.com/lmammino/jwtinfo&quot;&gt;&lt;code&gt;jwtinfo&lt;/code&gt;&lt;/a&gt; to read the content of the header and the body in plain text.&lt;/p&gt;
+&lt;p&gt;Trust me, if you do that you will be surprised by how many interesting information you can find there!&lt;/p&gt;
+&lt;h2 id=&quot;closing-notes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#closing-notes&quot; aria-label=&quot;closing notes permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Closing notes&lt;/h2&gt;
+&lt;p&gt;JWT tokens are an interesting approach to authentication and they are particularly convenient in distributed systems when we want to minimise the communication and the amount of load to the authentication provider. Once a token is created, it can be validated without the need to call the authentication provider again.&lt;/p&gt;
+&lt;p&gt;If you are curious to understand more about how JWT works (and even how you could crack tokens using Node.js 😼) check out this talk I gave a couple of years ago at &lt;a href=&quot;https://buzzjs.com/&quot;&gt;BuzzJS 2018&lt;/a&gt; in the beautiful New York City:&lt;/p&gt;
+&lt;div style=&quot;margin-top: 2em; position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 2em;&quot;&gt;
+&lt;iframe style=&quot;position: absolute; top:0; left: 0; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/uBYdxOQ57nQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;While you watch that, you can have &lt;a href=&quot;https://loige.link/jwt-crack-ny&quot;&gt;the slides&lt;/a&gt; too! 🤗&lt;/p&gt;
+&lt;p&gt;That’s all for now.&lt;/p&gt;
+&lt;p&gt;Thank you and see you on the next post! 👋&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Middy 1.0.0 is here]]></title><description><![CDATA[Middy, the Node.js middleware framework for AWS Lambda, has finally graduated to 1.0.0! A long awaited milestone for the project. In this…]]></description><link>https://loige.co/middy-1-is-here</link><guid isPermaLink="false">https://loige.co/middy-1-is-here</guid><pubDate>Sun, 26 Apr 2020 15:25:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/0a5bf32109b158b73497b24e4e7bc6aa/middy-1-is-here-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;Middy, the Node.js middleware framework for AWS Lambda, has finally graduated to 1.0.0! A long awaited milestone for the project.&lt;/p&gt;
 &lt;p&gt;In this post we will discuss what middy is and what are the main features of this first stable release.&lt;/p&gt;
 &lt;h2 id=&quot;what-is-middy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-is-middy&quot; aria-label=&quot;what is middy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is middy&lt;/h2&gt;
 &lt;p&gt;If you are hearing about &lt;a href=&quot;https://middy.js.org&quot;&gt;middy&lt;/a&gt; for the first time, middy is a &lt;strong&gt;middleware framework&lt;/strong&gt; for &lt;strong&gt;AWS Lambda&lt;/strong&gt; written in &lt;strong&gt;Node.js&lt;/strong&gt;.&lt;/p&gt;
