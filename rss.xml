@@ -1,7 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Cloud developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige: Cloud developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 06 Oct 2020 08:16:06 GMT</lastBuildDate><item><title><![CDATA[What's in a JWT (Json Web Token)?]]></title><description><![CDATA[If you ended up on this article, chances are that you have been seeing JWTs (Json Web Tokens) for a while and you are curious to find out…]]></description><link>https://loige.co/whats-in-a-jwt</link><guid isPermaLink="false">https://loige.co/whats-in-a-jwt</guid><pubDate>Mon, 05 Oct 2020 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/1dbbf75d4568ba96a927727fd3b5d752/whats-in-a-jwt-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;If you ended up on this article, chances are that you have been seeing JWTs (Json Web Tokens) for a while and you are curious to find out what they really are, what’s inside of them and how they actually work! Why did they get so mainstream anyway?! 🤔&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Cloud developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige: Cloud developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 06 Oct 2020 09:00:36 GMT</lastBuildDate><item><title><![CDATA[What's in a JWT (Json Web Token)?]]></title><description><![CDATA[If you ended up on this article, chances are that you have been seeing JWTs (Json Web Tokens) for a while and you are curious to find out…]]></description><link>https://loige.co/whats-in-a-jwt</link><guid isPermaLink="false">https://loige.co/whats-in-a-jwt</guid><pubDate>Mon, 05 Oct 2020 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/1dbbf75d4568ba96a927727fd3b5d752/whats-in-a-jwt-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;If you ended up on this article, chances are that you have been seeing JWTs (Json Web Tokens) for a while and you are curious to find out what they really are, what’s inside of them and how they actually work! Why did they get so mainstream anyway?! 🤔&lt;/p&gt;
 &lt;p&gt;In this article we will be trying to address this topic in a short but (hopefully) effective fashion!&lt;/p&gt;
 &lt;h2 id=&quot;its-just-a-string-with-a-well-defined-format&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#its-just-a-string-with-a-well-defined-format&quot; aria-label=&quot;its just a string with a well defined format permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;It’s just a string with a well-defined format&lt;/h2&gt;
 &lt;p&gt;JWT stands for &lt;em&gt;JSON Web Token&lt;/em&gt; and such a token is just a string composed by 3 parts:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 7.421875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAACXBIWXMAAAsSAAALEgHS3X78AAAASElEQVQI1wE9AML/APzsy//tyPHgvtzMrPTkwf/uyvPpw+HxzeX00NPhwNDdveX00OHzzPHbzv/Z2+vKyuHBwerJyfzY2Pzb2y+GM7JuSSGdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/181d65739930a5b4e667859699eb88ef/8d3d1/jwt-parts.webp 256w,
+/static/181d65739930a5b4e667859699eb88ef/354cf/jwt-parts.webp 512w,
+/static/181d65739930a5b4e667859699eb88ef/44907/jwt-parts.webp 1024w,
+/static/181d65739930a5b4e667859699eb88ef/c5b95/jwt-parts.webp 1350w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/181d65739930a5b4e667859699eb88ef/85b06/jwt-parts.png 256w,
+/static/181d65739930a5b4e667859699eb88ef/bc282/jwt-parts.png 512w,
+/static/181d65739930a5b4e667859699eb88ef/f1720/jwt-parts.png 1024w,
+/static/181d65739930a5b4e667859699eb88ef/5d6e7/jwt-parts.png 1350w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/181d65739930a5b4e667859699eb88ef/f1720/jwt-parts.png&quot;
+          alt=&quot;The three parts of a JSON Web Token&quot;
+          title=&quot;The three parts of a JSON Web Token&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a &lt;strong&gt;header&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;a &lt;strong&gt;body&lt;/strong&gt; (sometimes also referred to as &lt;strong&gt;payload&lt;/strong&gt;)&lt;/li&gt;
@@ -10,6 +45,41 @@
 &lt;p&gt;Let’s have a look at a more concrete example, a JWT looks like this:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6ImZyb20gSldUIn0.XoByFQCJvii_iOTO4xlz23zXmb4yuzC3gqrWNt3EHrg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The three parts are separated by a &lt;code&gt;.&lt;/code&gt; (dot) character:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.3125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAA40lEQVQY012OW0+DQBCF+f//RqttfO7toemDMSql9wIGFoRC22UpsJ/LmvjgJF9O5mTmzDip90L88UCyeiL+fES4A6MDwtWQ5WbEcjti4T2z2Ax57WcnE5L5HDGbWaLplNhoOB4TGZz6vEfla1S2phJvVMm71Zvp42JHVGz5yj38zCVIXcr9DuX7qCCwyMOB6nhEnk6oMMRBa3p0fUXfvtHXBF0V/C95r5FNTdnKP68pCu5pSpNlNHluPadTFzqZ/aJKuj5YdwZzCG2CJOKSksvccKbrWrvYSmk/rIWw9N81ZckPYlsq8tfvlKgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/073704942c031317906482e43abfa8fd/8d3d1/jwt-parts-example.webp 256w,
+/static/073704942c031317906482e43abfa8fd/354cf/jwt-parts-example.webp 512w,
+/static/073704942c031317906482e43abfa8fd/44907/jwt-parts-example.webp 1024w,
+/static/073704942c031317906482e43abfa8fd/4621e/jwt-parts-example.webp 1292w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/073704942c031317906482e43abfa8fd/85b06/jwt-parts-example.png 256w,
+/static/073704942c031317906482e43abfa8fd/bc282/jwt-parts-example.png 512w,
+/static/073704942c031317906482e43abfa8fd/f1720/jwt-parts-example.png 1024w,
+/static/073704942c031317906482e43abfa8fd/51bf4/jwt-parts-example.png 1292w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/073704942c031317906482e43abfa8fd/f1720/jwt-parts-example.png&quot;
+          alt=&quot;The three parts of a sample JSON Web Token&quot;
+          title=&quot;The three parts of a sample JSON Web Token&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;header: &lt;code&gt;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;body: &lt;code&gt;eyJoZWxsbyI6ImZyb20gSldUIn0&lt;/code&gt;&lt;/li&gt;

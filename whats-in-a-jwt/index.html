@@ -79,6 +79,41 @@
 <p>In this article we will be trying to address this topic in a short but (hopefully) effective fashion!</p>
 <h2 id="its-just-a-string-with-a-well-defined-format" style="position:relative;"><a href="#its-just-a-string-with-a-well-defined-format" aria-label="its just a string with a well defined format permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>It’s just a string with a well-defined format</h2>
 <p>JWT stands for <em>JSON Web Token</em> and such a token is just a string composed by 3 parts:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 7.421875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAACXBIWXMAAAsSAAALEgHS3X78AAAASElEQVQI1wE9AML/APzsy//tyPHgvtzMrPTkwf/uyvPpw+HxzeX00NPhwNDdveX00OHzzPHbzv/Z2+vKyuHBwerJyfzY2Pzb2y+GM7JuSSGdAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/181d65739930a5b4e667859699eb88ef/8d3d1/jwt-parts.webp 256w,
+/static/181d65739930a5b4e667859699eb88ef/354cf/jwt-parts.webp 512w,
+/static/181d65739930a5b4e667859699eb88ef/44907/jwt-parts.webp 1024w,
+/static/181d65739930a5b4e667859699eb88ef/c5b95/jwt-parts.webp 1350w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/181d65739930a5b4e667859699eb88ef/85b06/jwt-parts.png 256w,
+/static/181d65739930a5b4e667859699eb88ef/bc282/jwt-parts.png 512w,
+/static/181d65739930a5b4e667859699eb88ef/f1720/jwt-parts.png 1024w,
+/static/181d65739930a5b4e667859699eb88ef/5d6e7/jwt-parts.png 1350w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/181d65739930a5b4e667859699eb88ef/f1720/jwt-parts.png"
+          alt="The three parts of a JSON Web Token"
+          title="The three parts of a JSON Web Token"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+    </span></p>
 <ul>
 <li>a <strong>header</strong></li>
 <li>a <strong>body</strong> (sometimes also referred to as <strong>payload</strong>)</li>
@@ -87,6 +122,41 @@
 <p>Let’s have a look at a more concrete example, a JWT looks like this:</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoZWxsbyI6ImZyb20gSldUIn0.XoByFQCJvii_iOTO4xlz23zXmb4yuzC3gqrWNt3EHrg</code></pre></div>
 <p>The three parts are separated by a <code>.</code> (dot) character:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 20.3125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAA40lEQVQY012OW0+DQBCF+f//RqttfO7toemDMSql9wIGFoRC22UpsJ/LmvjgJF9O5mTmzDip90L88UCyeiL+fES4A6MDwtWQ5WbEcjti4T2z2Ax57WcnE5L5HDGbWaLplNhoOB4TGZz6vEfla1S2phJvVMm71Zvp42JHVGz5yj38zCVIXcr9DuX7qCCwyMOB6nhEnk6oMMRBa3p0fUXfvtHXBF0V/C95r5FNTdnKP68pCu5pSpNlNHluPadTFzqZ/aJKuj5YdwZzCG2CJOKSksvccKbrWrvYSmk/rIWw9N81ZckPYlsq8tfvlKgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/073704942c031317906482e43abfa8fd/8d3d1/jwt-parts-example.webp 256w,
+/static/073704942c031317906482e43abfa8fd/354cf/jwt-parts-example.webp 512w,
+/static/073704942c031317906482e43abfa8fd/44907/jwt-parts-example.webp 1024w,
+/static/073704942c031317906482e43abfa8fd/4621e/jwt-parts-example.webp 1292w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/073704942c031317906482e43abfa8fd/85b06/jwt-parts-example.png 256w,
+/static/073704942c031317906482e43abfa8fd/bc282/jwt-parts-example.png 512w,
+/static/073704942c031317906482e43abfa8fd/f1720/jwt-parts-example.png 1024w,
+/static/073704942c031317906482e43abfa8fd/51bf4/jwt-parts-example.png 1292w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/073704942c031317906482e43abfa8fd/f1720/jwt-parts-example.png"
+          alt="The three parts of a sample JSON Web Token"
+          title="The three parts of a sample JSON Web Token"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+    </span></p>
 <ul>
 <li>header: <code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</code></li>
 <li>body: <code>eyJoZWxsbyI6ImZyb20gSldUIn0</code></li>
