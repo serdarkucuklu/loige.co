@@ -1,4 +1,785 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Cloud developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige: Cloud developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Dec 2020 15:23:50 GMT</lastBuildDate><item><title><![CDATA[Learning Rust through open source and live code reviews]]></title><description><![CDATA[Hello from Luciano and Stefano! 👋 In the last few years we set ourselves onto the Rust learning path. We don’t work with Rust during our…]]></description><link>https://loige.co/learning-rust-through-open-source-and-live-code-reviews</link><guid isPermaLink="false">https://loige.co/learning-rust-through-open-source-and-live-code-reviews</guid><pubDate>Sun, 11 Oct 2020 19:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/5efdbd21a961cf9e541eeff8c5d4521c/learning-rust-through-open-source-and-live-code-reviews-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;Hello from Luciano and Stefano! 👋&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Luciano Mammino "Loige" - Cloud developer, entrepreneur, fighter, butterfly maker!]]></title><description><![CDATA[The website of Luciano Mammino a.k.a. Loige: Cloud developer, entrepreneur, fighter, butterfly maker]]></description><link>https://loige.co</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 02 Jan 2021 12:56:02 GMT</lastBuildDate><item><title><![CDATA[2020 - A year in review]]></title><description><![CDATA[As we transition into 2021 and we leave this crazy 2020 behind, it is a great time for me to reflect on my what happened in 2020 from a…]]></description><link>https://loige.co/2020-a-year-in-review</link><guid isPermaLink="false">https://loige.co/2020-a-year-in-review</guid><pubDate>Sat, 02 Jan 2021 12:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/ac2527ab51f5562a3570ec56da806578/2020-a-year-in-review-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;As we transition into 2021 and we leave this crazy 2020 behind, it is a great time for me to reflect on my what happened in 2020 from a career perspective and make some plans for the year to come.&lt;/p&gt;
+&lt;p&gt;Usual &lt;strong&gt;spoiler alert&lt;/strong&gt;: this is the fifth year in a row for me writing this kind of post. This is going to be a super boring one that I write for myself to reflect on where my career is going and what I am learning every year.&lt;/p&gt;
+&lt;p&gt;I hope I am setting the right expectation here. If you decide to go ahead and read this, get comfortable and grab a coffee because it’s going to get quite &lt;em&gt;BOOORING&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/content/f7f4938193ab003e781cb3279346cfc8/booring.gif&quot; alt=&quot;boring stuff ahead&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Yeah, this is a boring GIF. A silly attempt to warn you and (hopefully) to make things slightly less boring! 😜&lt;/p&gt;
+&lt;h2 id=&quot;an-important-reflection&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#an-important-reflection&quot; aria-label=&quot;an important reflection permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;An important reflection&lt;/h2&gt;
+&lt;p&gt;Before getting started, I want to make a small but important reflection about this crazy 2020, signed by a worldwide pandemic and a global crisis. And, by the way, I dare to remind you that none of this will be magically over just because we are in a new year now… 😟&lt;/p&gt;
+&lt;p&gt;This is something that no one could have predicted and it should rightfully shift our perspective towards society and ourself as individuals.&lt;/p&gt;
+&lt;p&gt;Of course, I am not going to tell you how you should reconsider your life, but I want to share how I am reconsidering some small elements in mine.&lt;/p&gt;
+&lt;p&gt;In the last few years, I have been quite eager to grow as a professional and I tried to accomplish more and more every year, sometimes at the expense of time spent with the people that are dear to me. In retrospective, I recognize that sometimes I might have been a bit too selfish, and I should try hard to change that…&lt;/p&gt;
+&lt;p&gt;I have been quite lucky in 2020 because even in these strange times, I have been one of the privileged ones. I work in an industry that it is still thriving (now more than ever) and I didn’t lose my job, nor did I have to take a pay cut. I somehow managed to stay healthy throughout last year and so did most of the people dear to me.&lt;/p&gt;
+&lt;p&gt;I hope that most of the people reading this could say the same, but we all can’t ignore the fact that the majority of people out there are struggling and suffering.&lt;/p&gt;
+&lt;p&gt;I don’t think, as an individual, that I can have any significant impact to make things better on a large scale, but I can have an impact on my local community and with the people I care about.&lt;/p&gt;
+&lt;p&gt;I am not planning anything big here. I want to try to be more aware and careful with the people around. A phone call or just asking &lt;em&gt;“how are you today?”&lt;/em&gt;, &lt;em&gt;“what are you doing?”&lt;/em&gt;, &lt;em&gt;“I was thinking about you…”&lt;/em&gt; or &lt;em&gt;“can I help you with anything?”&lt;/em&gt; could be small gestures but they might mean a lot for the people you care about, even at distance.&lt;/p&gt;
+&lt;p&gt;I have tried to do these things a little bit this year, but I’ll try to it more next year. I want to encourage you to do the same.&lt;/p&gt;
+&lt;p&gt;In short, I am wishing for 2021 that we can be more compassionate and support each other more.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Together we can face any challenge as deep as the ocean and as high as the sky.&lt;br&gt;
+— Sonia Gandhi&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;nodejs-design-patterns---third-edition&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nodejs-design-patterns---third-edition&quot; aria-label=&quot;nodejs design patterns   third edition permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Node.js Design Patterns - Third edition&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/mariocasciaro&quot;&gt;Mario Casciaro&lt;/a&gt; and I have been working on the third edition of &lt;a href=&quot;https://www.nodejsdesignpatterns.com/&quot;&gt;Node.js Desing Patterns (the book)&lt;/a&gt; since September 2019. This new edition finally came out this year at the end of July 2020.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.nodejsdesignpatterns.com/&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.1875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABdNfJycs2Ef8A/8QAGxAAAwACAwAAAAAAAAAAAAAAAQIDABIEITH/2gAIAQEAAQUCcJOckRqFe+X4GO2gz//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/Aaf/xAAXEQADAQAAAAAAAAAAAAAAAAABAhAh/9oACAECAQE/AQuT/8QAGxAAAgEFAAAAAAAAAAAAAAAAAQIQAAMRYYH/2gAIAQEABj8CNEXG5iFO5//EABoQAQADAQEBAAAAAAAAAAAAAAEAESFBMXH/2gAIAQEAAT8hvlVXPsbTuWg172WCKVxPfbXvYgz/2gAMAwEAAgADAAAAEOA//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EFLYX//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8QTisrP//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExQVFhgf/aAAgBAQABPxBAbiB5TgfWJKl7AHxp72IJ3RoNs1WwJBsJWgxaGFz/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/a4f038c0e7202ebda6ed5526c96529be/8d3d1/nodejs-design-patterns-book-on-a-table-next-to-a-plant.webp 256w,
+/static/a4f038c0e7202ebda6ed5526c96529be/354cf/nodejs-design-patterns-book-on-a-table-next-to-a-plant.webp 512w,
+/static/a4f038c0e7202ebda6ed5526c96529be/03f31/nodejs-design-patterns-book-on-a-table-next-to-a-plant.webp 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/a4f038c0e7202ebda6ed5526c96529be/b95e4/nodejs-design-patterns-book-on-a-table-next-to-a-plant.jpg 256w,
+/static/a4f038c0e7202ebda6ed5526c96529be/1779b/nodejs-design-patterns-book-on-a-table-next-to-a-plant.jpg 512w,
+/static/a4f038c0e7202ebda6ed5526c96529be/dbdff/nodejs-design-patterns-book-on-a-table-next-to-a-plant.jpg 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/a4f038c0e7202ebda6ed5526c96529be/dbdff/nodejs-design-patterns-book-on-a-table-next-to-a-plant.jpg&quot;
+          alt=&quot;Node.js Design Patterns book on a table next to a plant&quot;
+          title=&quot;Node.js Design Patterns book on a table next to a plant&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have been spending countless hours working in tandem on this new edition, which resulted in a full rewrite of the previous edition and a lot of additional new content. The print edition turned out to be massive counting more than 660 pages!&lt;/p&gt;
+&lt;p&gt;A lot has changed in the Node.js landscape since 2016 (when we published the second edition) and in this book, we tried to take full advantage of new interesting capabilities like &lt;code&gt;async/await&lt;/code&gt; and &lt;code&gt;ESM&lt;/code&gt;. We have also grown a lot as engineers in the last 4 years and this helped us to put things on a different perspective and improve the overall quality of the book compared to the previous editions.&lt;/p&gt;
+&lt;p&gt;We re-imagined the book as a learning path and we decided to add exercises at the end of every chapter. This allows readers to test their understanding of the main concepts. In this perspective, we also created a &lt;a href=&quot;https://github.com/PacktPublishing/Node.js-Design-Patterns-Third-Edition/wiki/Node.js-Design-Patterns-Third-Edition---Exercise-Solutions&quot;&gt;wiki&lt;/a&gt; and a &lt;a href=&quot;https://github.com/PacktPublishing/Node.js-Design-Patterns-Third-Edition/discussions&quot;&gt;discussion board&lt;/a&gt; for readers to exchange opinions and collaborate towards writing their own solutions.&lt;/p&gt;
+&lt;p&gt;I am quite proud of the final result and I consider this book one of the greatest achievements of my career so far. A mandatory “thank you” goes to Mario for involving me in this awesome project!&lt;/p&gt;
+&lt;p&gt;But this result is not something that can only be attributed to our hard work as authors. It is important to shine a light on all the people that contributed and helped us to make this new edition a reality.&lt;/p&gt;
+&lt;p&gt;First and foremost, &lt;strong&gt;all our readers&lt;/strong&gt; from the previous editions. In the last few years, we have collected tons of feedback and ideas on what could have been improved and how. I want to dedicate this new edition to all of them and I hope this book will bring value to the Node.js community as a whole.&lt;/p&gt;
+&lt;p&gt;Our publisher, &lt;strong&gt;Packt&lt;/strong&gt;, has been helping us a lot. Packt made sure that this new edition would result in a higher quality product compared to the 2 previous editions.&lt;/p&gt;
+&lt;p&gt;Last but not least, the incredible team of &lt;strong&gt;technical reviewers&lt;/strong&gt; made up by some of the most talented engineers I had the pleasure to engage with in my career. This has been the tip of the spear for us and the element that contributed the most to the final quality of the book. I want to thank the reviewers one by one (in random order): &lt;a href=&quot;https://twitter.com/romMiraballes&quot;&gt;Romina Miraballes&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/gbinside&quot;&gt;Roberto Gambuzzi&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/marquicodes&quot;&gt;Kyriakos Markakis&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/liran_tal&quot;&gt;Liran Tal&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/delvedor&quot;&gt;Tomas Della Vedova&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/peterpoliwoda&quot;&gt;Peter Poliwoda&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/jmwsoft&quot;&gt;Minwoo Jung&lt;/a&gt;. If you are reading this, make sure to follow all of them on Twitter… Trust me, you won’t regret it. 😇&lt;/p&gt;
+&lt;p&gt;Unfortunately, I can’t disclose any data, but this new edition has been doing quite well so far. We got some good recognition (if you need a proof of that, you could check out the reviews on Amazon) and it has been ranking quite high on Amazon in several categories (including &lt;em&gt;JavaScript&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 89.453125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAASABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAMEAgUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAevnoyFtRWbPMlA//8QAGxAAAQUBAQAAAAAAAAAAAAAAAwABAgQTEBL/2gAIAQEAAQUCJMYV6Zm0grlKNtyg1EKpmN+//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAIRAAAQQBAwUAAAAAAAAAAAAAAQACERIDICIxMkFRUmH/2gAIAQEABj8C35In2Km7YXWEyznCPCyMs4W7xwg25d9I0f/EAB0QAAICAgMBAAAAAAAAAAAAAAERADEhURBBcZH/2gAIAQEAAT8hJgXxDdxwQAsk1ArBfC5dH/tQJAsxiDTUR6zwnb6luf/aAAwDAQACAAMAAAAQu9g8/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQESH/2gAIAQMBAT8QawVz/8QAGBEAAwEBAAAAAAAAAAAAAAAAAREhABD/2gAIAQIBAT8QBtxTnf/EAB4QAQEBAAICAwEAAAAAAAAAAAERIQAxQVEQYXHR/9oACAEBAAE/ECUpL2dkH0WTwTjisEM1NvXG0K3YvXZ9nAYDKRHst/ObuQEBECkmXq67yMlaA6tYPPO78/vAIZ8f/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0e9598f5691efa58ef1b21dea6317a16/8d3d1/node-js-design-patterns-third-edition-second-position-on-amazon.webp 256w,
+/static/0e9598f5691efa58ef1b21dea6317a16/354cf/node-js-design-patterns-third-edition-second-position-on-amazon.webp 512w,
+/static/0e9598f5691efa58ef1b21dea6317a16/44907/node-js-design-patterns-third-edition-second-position-on-amazon.webp 1024w,
+/static/0e9598f5691efa58ef1b21dea6317a16/24f1e/node-js-design-patterns-third-edition-second-position-on-amazon.webp 1080w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0e9598f5691efa58ef1b21dea6317a16/b95e4/node-js-design-patterns-third-edition-second-position-on-amazon.jpg 256w,
+/static/0e9598f5691efa58ef1b21dea6317a16/1779b/node-js-design-patterns-third-edition-second-position-on-amazon.jpg 512w,
+/static/0e9598f5691efa58ef1b21dea6317a16/87945/node-js-design-patterns-third-edition-second-position-on-amazon.jpg 1024w,
+/static/0e9598f5691efa58ef1b21dea6317a16/797d6/node-js-design-patterns-third-edition-second-position-on-amazon.jpg 1080w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/0e9598f5691efa58ef1b21dea6317a16/87945/node-js-design-patterns-third-edition-second-position-on-amazon.jpg&quot;
+          alt=&quot;Node.js Design Patterns third edition second position on Amazon for the JavaScript category&quot;
+          title=&quot;Node.js Design Patterns third edition second position on Amazon for the JavaScript category&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thanks a lot to &lt;a href=&quot;https://twitter.com/goranjawdat&quot;&gt;Goran Jawdat&lt;/a&gt; for sending us this amazing screenshot!&lt;/p&gt;
+&lt;p&gt;If you are interested in finding out more about Node.js Design Patterns, make sure to check out &lt;a href=&quot;https://www.nodejsdesignpatterns.com/&quot;&gt;the official website&lt;/a&gt;. Also, we recently launched a &lt;a href=&quot;https://www.nodejsdesignpatterns.com/blog/&quot;&gt;blog&lt;/a&gt; section that you might want to check out as well!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;These are not books, lumps of lifeless paper, but minds alive on the shelves.&lt;br&gt;
+— Gilbert Highet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;conference-talks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conference-talks&quot; aria-label=&quot;conference talks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conference Talks&lt;/h2&gt;
+&lt;p&gt;After a few years involving travelling a lot to speak at many different conferences around the World and with all the effort I put on the third edition of Node.js Design Patterns, I didn’t feel like I wanted to do any talk this year. So, I did not apply for any conference or meetup.&lt;/p&gt;
+&lt;p&gt;With that being said, I still ended up delivering 13 different talks, which put me exactly on par with what I did last year! &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.609375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABy0LG8VIuE//EABsQAAICAwEAAAAAAAAAAAAAAAIDAQQABRMS/9oACAEBAAEFAgX7ZJitinVeZ9CydW1VYLcrD//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAEDAQE/AUf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAIAQIBAT8Bsa//xAAgEAACAgIABwAAAAAAAAAAAAABAgARAxMhIjEyYXGx/9oACAEBAAY/AjiVgWE5gCLIPGDftL+GqOWYX09xszZVDAdtQKPk/8QAHBABAAICAwEAAAAAAAAAAAAAAQARMUEhUWHB/9oACAEBAAE/IamitLwQ5UC/OyX4I2QryPu1JmbJ8wXvfLDysOw/J//aAAwDAQACAAMAAAAQ0+//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EI1R/8QAGREAAwADAAAAAAAAAAAAAAAAAAERYYHw/9oACAECAQE/EGk1lw7R/8QAHBABAQACAwEBAAAAAAAAAAAAAREAITFBYVFx/9oACAEBAAE/EL4aPEJVv6YHbxCSOQ0lnfeN35nocQprWFxpBGxtbNcedawMk3xCUfTfMcMAH53hVDzP/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/a29101375cd7442e3e6498aaf94040fd/8d3d1/luciano-mammino-gcs-connect-serverless.webp 256w,
+/static/a29101375cd7442e3e6498aaf94040fd/354cf/luciano-mammino-gcs-connect-serverless.webp 512w,
+/static/a29101375cd7442e3e6498aaf94040fd/fa73e/luciano-mammino-gcs-connect-serverless.webp 700w&quot;
+          sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/a29101375cd7442e3e6498aaf94040fd/b95e4/luciano-mammino-gcs-connect-serverless.jpg 256w,
+/static/a29101375cd7442e3e6498aaf94040fd/1779b/luciano-mammino-gcs-connect-serverless.jpg 512w,
+/static/a29101375cd7442e3e6498aaf94040fd/03346/luciano-mammino-gcs-connect-serverless.jpg 700w&quot;
+          sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/a29101375cd7442e3e6498aaf94040fd/03346/luciano-mammino-gcs-connect-serverless.jpg&quot;
+          alt=&quot;Luciano Mammino speaking at GCS Connect Serverless Dublin Meetup&quot;
+          title=&quot;Luciano Mammino speaking at GCS Connect Serverless Dublin Meetup&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I was extremely surprised and flattered to have received a lot of invitations to talk at several events. And, yes… when you get an invitation, it’s very hard to say &lt;em&gt;NO&lt;/em&gt;… Needless to say that, in 2020, most of these conferences were remote.&lt;/p&gt;
+&lt;p&gt;What made me particularly happy is that some of these talks are not regular tech talks, but interviews about my career path. I am quite happy that I had the opportunity to tell my story and, through my failures and successes, to have an opportunity to inspire other people to try their best every day.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://www.youtube.com/channel/UCMudbsRDgdkDe3hXD2qsTUg&quot;&gt;Francesco Sciuti&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/channel/UCckCYs-msiC4Vs_nyg218Hw&quot;&gt;Simone Torrisi&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/c/JavaChallengers/&quot;&gt;Rafael Del Nero&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/channel/UCBRxDSTfr2aJVODDh4WG_7g&quot;&gt;Francesco Ciulla&lt;/a&gt; for interviewing me and everyone else that invited me to speak at their own meetups and conferences! Seriously, &lt;em&gt;THANK YOU&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;This is the full list of talks for my 2020. You can find more details and links in the &lt;a href=&quot;/speaking&quot;&gt;speaking section of this blog&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;“Middy.js: a powerful middleware framework for your Node.js lambdas”&lt;/em&gt;, Dublin GCS Connect Serverless (Dublin, Ireland)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Writing a tech book: it’s doable! (Interview — in Italian)”&lt;/em&gt;, Acadevmy - Uno di frontend (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Is the pot full of gold really in Ireland? (Interview — in Italian)”&lt;/em&gt;, Acadevmy - Chiacchiere per DEVulgare (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“An overview of JavaScript and Node.js”&lt;/em&gt;, Liferay Universities Series (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Node.js scalability tips”&lt;/em&gt;, Shift conference (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Unbundling the JavaScript module bundler”&lt;/em&gt;, Road to Coderful (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Node.js scalability tips”&lt;/em&gt;, CityJS 2020 (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Tomorrowdevs interview (#storiedidevelopers)”&lt;/em&gt;, Tomorrowdevs (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“An Intro to Eleventy: Static Site Generation Made Fun Again”&lt;/em&gt;, CorkDev (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“The path to become a Principal Engineer - interview with Java Challengers”&lt;/em&gt;, Java Challengers (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“Node.js scalability tips”&lt;/em&gt;, Codemotion online 2020 (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“An Intro to Eleventy: Static Site Generation Made Fun Again”&lt;/em&gt;, MancJS (remote)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;“The process of writing a successful programming book”&lt;/em&gt;, Francesco Ciulla’s Channel (remote)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After having delivered a total of 54 talks and workshops in the last few years, I have to admit I feel like I am running out of things to say… Maybe it’s just my imposter syndrome talking, but I am not sure I want to commit to doing any talk for next year. So, I will probably keep this open-ended. If some good opportunity presents itself, I’ll take it…&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I believe in the power of ideas. I believe in the power of sharing knowledge.&lt;br&gt;
+— Ory Okolloh&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;career&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#career&quot; aria-label=&quot;career permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Career&lt;/h2&gt;
+&lt;p&gt;In 2020 I joined &lt;a href=&quot;http://fabfitfun.com&quot;&gt;Fabfitfun&lt;/a&gt; as a &lt;strong&gt;Principal Software Engineer&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.5625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAeyRUm5dHE//xAAaEAACAgMAAAAAAAAAAAAAAAABAwACBBIT/9oACAEBAAEFAt7y2Xq5eSCuNA7JA4//xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAIAQMBAT8BjH//xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAIAQIBAT8BrX//xAAcEAABBAMBAAAAAAAAAAAAAAAAAQIRIRASQTP/2gAIAQEABj8C8jXWhFfTuxiY4No//8QAHhABAAICAQUAAAAAAAAAAAAAAQARITFhEEFRccH/2gAIAQEAAT8hDfbcRM5DPfn5ONXBTpaUW1Wo5Ea8T//aAAwDAQACAAMAAAAQnw//xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAh/9oACAEDAQE/EBbhXZv/xAAXEQADAQAAAAAAAAAAAAAAAAAAARFx/9oACAECAQE/EGiNH//EABwQAQEAAwEAAwAAAAAAAAAAAAERACExUXGBof/aAAgBAQABPxB+DB3D+yY11QASt8vZx9+YYNDTLeo/EyE5hTDOBUjpfMSRU1RvP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c1fce877b8d7111227896d62931c8213/8d3d1/fabfitfun-mission.webp 256w,
+/static/c1fce877b8d7111227896d62931c8213/354cf/fabfitfun-mission.webp 512w,
+/static/c1fce877b8d7111227896d62931c8213/47a22/fabfitfun-mission.webp 800w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c1fce877b8d7111227896d62931c8213/b95e4/fabfitfun-mission.jpg 256w,
+/static/c1fce877b8d7111227896d62931c8213/1779b/fabfitfun-mission.jpg 512w,
+/static/c1fce877b8d7111227896d62931c8213/5fd6b/fabfitfun-mission.jpg 800w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c1fce877b8d7111227896d62931c8213/5fd6b/fabfitfun-mission.jpg&quot;
+          alt=&quot;Fabfitfun is delivering happiness and well being to everyione everywhere&quot;
+          title=&quot;Fabfitfun is delivering happiness and well being to everyione everywhere&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Fabfitfun is a very interesting company with a lot of technical challenges, regarding very spiky traffic (serving millions of users on a regular basis) and an evolving architecture where we are transitioning from a legacy monolith to a set of decoupled microservices.&lt;/p&gt;
+&lt;p&gt;The main headquarter is in Los Angeles, but I joined a new team based in Dublin, which was formed only at the beginning of 2020.&lt;/p&gt;
+&lt;p&gt;Even if I have been at Fabfitfun for less than a year I feel like I had several opportunities to have an impact.&lt;/p&gt;
+&lt;p&gt;I am currently spending a lot of time wearing many different hats and trying to help in different areas. From building new services (mostly using Python and the excellent &lt;a href=&quot;https://fastapi.tiangolo.com/&quot;&gt;&lt;code&gt;fastapi&lt;/code&gt;&lt;/a&gt; framework), building new &lt;strong&gt;integrations&lt;/strong&gt; and &lt;strong&gt;automation&lt;/strong&gt; around our corporate Slack, optimizing existing solutions around &lt;strong&gt;scalability&lt;/strong&gt;, &lt;strong&gt;security&lt;/strong&gt; and &lt;strong&gt;authentication&lt;/strong&gt; and helping to decouple the legacy monolith into new services deployed on &lt;strong&gt;Kubernetes&lt;/strong&gt;. In the last few months, I have also been organising an internal monthly meetup to help different teams located worldwide to have a place where they can share their passion for technology.&lt;/p&gt;
+&lt;p&gt;I admit it has been a bit of a bumpy ride at times. I suppose that starting a new remote office in a crazy unpredictable year like 2020 has been the main reason for some hiccups, but things are getting better as we integrate more with the rest of the company and I am definitely blessed to be working with a world-class team of professionals and to be able to share my expertise every day.&lt;/p&gt;
+&lt;p&gt;On top of this, I have been quite lucky I had the chance to visit the headquarter in Los Angeles, just before the whole pandemic exploded.&lt;/p&gt;
+&lt;p&gt;Let me prove that to you with a couple of pictures:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.859375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgD/2gAMAwEAAhADEAAAATKNRTbsV//EABsQAAICAwEAAAAAAAAAAAAAAAECAAMEERIT/9oACAEBAAEFAhr0PIHVcAERmbKFVaz/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIDFP/aAAgBAwEBPwF1JmaJ/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECAwQRFP/aAAgBAgEBPwGORJLSOyw//8QAHxAAAQMDBQAAAAAAAAAAAAAAAAECIRARgRMiQUJR/9oACAEBAAY/Asl+PaMjsaSrsmMkMQ//xAAcEAADAQACAwAAAAAAAAAAAAABESEAMUFhcbH/2gAIAQEAAT8hso+NWsukHeRyTrKWphmiPDgRI+t//9oADAMBAAIAAwAAABCA/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxBQWH//xAAYEQACAwAAAAAAAAAAAAAAAAAAASFBcf/aAAgBAgEBPxB6gsyP/8QAHBABAAMBAQADAAAAAAAAAAAAAQARIVExQXGx/9oACAEBAAE/ELUCAmaCi7rnxC9ufhx2eALxAf2OEtqw3SOeUk4kx5Kd61sqv2z/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/1e5fe55817e2729f07ae9d0e1bcfef87/8d3d1/loige-luciano-mammino-hollywood.webp 256w,
+/static/1e5fe55817e2729f07ae9d0e1bcfef87/354cf/loige-luciano-mammino-hollywood.webp 512w,
+/static/1e5fe55817e2729f07ae9d0e1bcfef87/47a22/loige-luciano-mammino-hollywood.webp 800w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/1e5fe55817e2729f07ae9d0e1bcfef87/b95e4/loige-luciano-mammino-hollywood.jpg 256w,
+/static/1e5fe55817e2729f07ae9d0e1bcfef87/1779b/loige-luciano-mammino-hollywood.jpg 512w,
+/static/1e5fe55817e2729f07ae9d0e1bcfef87/5fd6b/loige-luciano-mammino-hollywood.jpg 800w&quot;
+          sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/1e5fe55817e2729f07ae9d0e1bcfef87/5fd6b/loige-luciano-mammino-hollywood.jpg&quot;
+          alt=&quot;Luciano Mammino at the Hollywood sign&quot;
+          title=&quot;Luciano Mammino at the Hollywood sign&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is me at the Hollywood sign!&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.234375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/2gAMAwEAAhADEAAAAXU5eipixpj/AP/EABoQAAMBAAMAAAAAAAAAAAAAAAECAwQAERP/2gAIAQEAAQUCsVmhp0qb6hTQuPZl2mIPP//EABgRAQEAAwAAAAAAAAAAAAAAABEAAQQh/9oACAEDAQE/AVs7Bxv/xAAYEQADAQEAAAAAAAAAAAAAAAAAARIEEf/aAAgBAgEBPwGJYs6a7J//xAAeEAACAQMFAAAAAAAAAAAAAAAAAQIDEkERITEykf/aAAgBAQAGPwJvAlTePDanFkYS6rBdHRXHJ//EABoQAQADAQEBAAAAAAAAAAAAAAEAESFRQXH/2gAIAQEAAT8hTF8VB1rXX6hsM6tTaxrgCvfHhkQuxP/aAAwDAQACAAMAAAAQPx//xAAYEQADAQEAAAAAAAAAAAAAAAAAARFBYf/aAAgBAwEBPxCqacKXjxn/xAAZEQEAAgMAAAAAAAAAAAAAAAABACFBYbH/2gAIAQIBAT8QqDfIGybJ/8QAHBABAQACAwEBAAAAAAAAAAAAAREAMSFBUWFx/9oACAEBAAE/ED4J0nk6DOLjsarEN4RW5RL2Nb9mRU/Xzy7mBUAqSgwk84HDWk6J9z//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ce09222fcf6ffe8f02fdd969813940e7/8d3d1/loige-gbinside-padraigobrien.webp 256w,
+/static/ce09222fcf6ffe8f02fdd969813940e7/354cf/loige-gbinside-padraigobrien.webp 512w,
+/static/ce09222fcf6ffe8f02fdd969813940e7/03f31/loige-gbinside-padraigobrien.webp 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ce09222fcf6ffe8f02fdd969813940e7/b95e4/loige-gbinside-padraigobrien.jpg 256w,
+/static/ce09222fcf6ffe8f02fdd969813940e7/1779b/loige-gbinside-padraigobrien.jpg 512w,
+/static/ce09222fcf6ffe8f02fdd969813940e7/dbdff/loige-gbinside-padraigobrien.jpg 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ce09222fcf6ffe8f02fdd969813940e7/dbdff/loige-gbinside-padraigobrien.jpg&quot;
+          alt=&quot;Padraig O&amp;#39;Brien, Luciano Mammino and Roberto Gambuzzi at the Griffith Observatory&quot;
+          title=&quot;Padraig O&amp;#39;Brien, Luciano Mammino and Roberto Gambuzzi at the Griffith Observatory&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From the left to the right: this is &lt;a href=&quot;https://twitter.com/PadraigOBrien&quot;&gt;Padraig O’Brien&lt;/a&gt;, me and &lt;a href=&quot;https://twitter.com/gbinside&quot;&gt;Roberto Gambuzzi&lt;/a&gt; at the Griffith Observatory (yes the one from La La Land).&lt;/p&gt;
+&lt;p&gt;And yes… in case you are wondering, we also did a lot of useful work while we were in LA! 😇&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All things are difficult before they are easy.&lt;br&gt;
+— Thomas Fuller&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;side-projects&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#side-projects&quot; aria-label=&quot;side projects permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Side projects&lt;/h2&gt;
+&lt;p&gt;In terms of side projects, 2020 has been an interesting year. I already spoke at length about Node.js Design Patterns, so now let’s discuss &lt;strong&gt;Middy&lt;/strong&gt;, &lt;strong&gt;FullStack Bulletin&lt;/strong&gt; and new project: &lt;strong&gt;Linkerflix&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;middy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#middy&quot; aria-label=&quot;middy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Middy&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://middy.js.org/&quot;&gt;Middy&lt;/a&gt; is a Node.js middleware framework for AWS Lambda. I have been working on this project since the early days of Lambda (even though the first public commit was made the 3rd of August 2017).&lt;/p&gt;
+&lt;p&gt;In April 2020 we finally &lt;a href=&quot;/middy-1-is-here&quot;&gt;launched Middy 1.0.0&lt;/a&gt;! After a few years of development and contributions from many awesome engineers, this was a pretty big milestone and I am quite proud of it!&lt;/p&gt;
+&lt;p&gt;What’s even better is that throughout the year I found out that several interesting big companies are actually using Middy on a daily basis. Unfortunately, I don’t have an official list, but here I have some proof that the LEGO Group does use Middy!&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 23.4375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHPSagH/8QAFhABAQEAAAAAAAAAAAAAAAAAABEB/9oACAEBAAEFAqq6/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhABAQEAAAAAAAAAAAAAAAAAMQAQ/9oACAEBAAY/AjG//8QAGRAAAwADAAAAAAAAAAAAAAAAABFhIXGR/9oACAEBAAE/IdVGbxwoP//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABABExQVFh/9oACAEBAAE/EHFUUtO3sAoo9IX1+Ck//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/07fe3fb763a95194f3076a3f14a74e38/8d3d1/lego-using-middy.webp 256w,
+/static/07fe3fb763a95194f3076a3f14a74e38/354cf/lego-using-middy.webp 512w,
+/static/07fe3fb763a95194f3076a3f14a74e38/44907/lego-using-middy.webp 1024w,
+/static/07fe3fb763a95194f3076a3f14a74e38/6fe5a/lego-using-middy.webp 1028w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/07fe3fb763a95194f3076a3f14a74e38/b95e4/lego-using-middy.jpg 256w,
+/static/07fe3fb763a95194f3076a3f14a74e38/1779b/lego-using-middy.jpg 512w,
+/static/07fe3fb763a95194f3076a3f14a74e38/87945/lego-using-middy.jpg 1024w,
+/static/07fe3fb763a95194f3076a3f14a74e38/d8b4a/lego-using-middy.jpg 1028w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/07fe3fb763a95194f3076a3f14a74e38/87945/lego-using-middy.jpg&quot;
+          alt=&quot;Hannah from the LEGO Group mentioning that they use Middy as a middleware layer for their Lambdas&quot;
+          title=&quot;Hannah from the LEGO Group mentioning that they use Middy as a middleware layer for their Lambdas&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;https://twitter.com/hannahintech&quot;&gt;Hannah Tucker McLellan (@hannahintech)&lt;/a&gt; on the &lt;a href=&quot;https://virtual.serverlessdays.io/&quot;&gt;ServerlessDays Virtual October 2020&lt;/a&gt; Discord channel. Thanks to &lt;a href=&quot;https://twitter.com/eoins&quot;&gt;@eoins&lt;/a&gt; for sending me this amazing screenshot and, of course, to Hannah for disclosing this info!&lt;/p&gt;
+&lt;p&gt;Interesting enough, I think I reached this milestone a bit burned out regarding the whole project. I haven’t been working a lot with Lambda and serverless in the last couple of years (definitely not as much as I used to do before), so I felt like I was dragging my heels to keep the project alive while I wanted to focus my attention somewhere else.&lt;/p&gt;
+&lt;p&gt;Because of this, my release post on this blog turned out to be a little bit of a cry for help to keep the project alive.&lt;/p&gt;
+&lt;p&gt;Thankfully the community around the project has been very patient and supporting. In particular, &lt;a href=&quot;https://github.com/willfarrell&quot;&gt;Will Farrel&lt;/a&gt; stepped up and offered to become the lead maintainer of the project. Since then, he has been doing an incredible amount of work releasing other 5 minor versions of the framework and &lt;a href=&quot;https://github.com/middyjs/middy/pull/587&quot;&gt;he is already working on a new major release&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;If you have been using Middy, please consider joining the community and giving back to the project! You can also &lt;a href=&quot;https://github.com/sponsors/willfarrell&quot;&gt;sponsor Will&lt;/a&gt; to support the time he is investing in the project!&lt;/p&gt;
+&lt;p&gt;Thanks a lot, Will! 🙌&lt;/p&gt;
+&lt;p&gt;One final observation about Middy is that the project has kept growing steadily throughout 2020, surpassing the astonishing number of more than 1 million downloads for the &lt;a href=&quot;https://www.npmjs.com/package/@middy/core&quot;&gt;&lt;code&gt;@middy/core&lt;/code&gt; package&lt;/a&gt; only.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://npm-stat.com/charts.html?package=%40middy%2Fcore&amp;#x26;from=2020-01-01&amp;#x26;to=2021-01-01&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 993px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 40.23437500000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd3IWB//xAAXEAADAQAAAAAAAAAAAAAAAAAAARAh/9oACAEBAAEFAhZP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAEDH/2gAIAQEABj8Cr//EABgQAAMBAQAAAAAAAAAAAAAAAAABETHR/9oACAEBAAE/IZtbhCaU/9oADAMBAAIAAwAAABDwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQEAAgMAAAAAAAAAAAAAAAERAEEhMXH/2gAIAQEAAT8QqrldBgQFO1256uf/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/6f278d84eb8e38a54868d15c94516e08/8d3d1/middy-downloads-2020.webp 256w,
+/static/6f278d84eb8e38a54868d15c94516e08/354cf/middy-downloads-2020.webp 512w,
+/static/6f278d84eb8e38a54868d15c94516e08/a2e27/middy-downloads-2020.webp 993w&quot;
+          sizes=&quot;(max-width: 993px) 100vw, 993px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/6f278d84eb8e38a54868d15c94516e08/b95e4/middy-downloads-2020.jpg 256w,
+/static/6f278d84eb8e38a54868d15c94516e08/1779b/middy-downloads-2020.jpg 512w,
+/static/6f278d84eb8e38a54868d15c94516e08/f5766/middy-downloads-2020.jpg 993w&quot;
+          sizes=&quot;(max-width: 993px) 100vw, 993px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/6f278d84eb8e38a54868d15c94516e08/f5766/middy-downloads-2020.jpg&quot;
+          alt=&quot;Downloads for @middy/core throughouth 2020&quot;
+          title=&quot;Downloads for @middy/core throughouth 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;These are not crazy big numbers in open source, but they are not small either. Especially if we consider that serverless is still new and there is a lot of potential for growth. If nothing else, these numbers make me proud to have started a project that is giving value to development teams.&lt;/p&gt;
+&lt;h3 id=&quot;fullstack-bulletin&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#fullstack-bulletin&quot; aria-label=&quot;fullstack bulletin permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FullStack Bulletin&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://fullstackbulletin.com/&quot;&gt;FullStack bulletin&lt;/a&gt; is a free weekly newsletter about full stack web development. I have been running this project with my dear friend &lt;a href=&quot;https://twitter.com/andreaman87&quot;&gt;Andrea Mangano&lt;/a&gt; for the last 3 years. The project is totally &lt;a href=&quot;https://github.com/FullStackBulletin&quot;&gt;open source&lt;/a&gt; and uses tons of automation to minimise the amount of manual work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fullstackbulletin.com/&quot;&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.90625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEEBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABw8ivcICv/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQIDEBET/9oACAEBAAEFAox0doAq1tf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPwFn/8QAHBAAAQMFAAAAAAAAAAAAAAAAAgABEQMTIGGC/9oACAEBAAY/AocxHZKb1F+sf//EABoQAQADAAMAAAAAAAAAAAAAAAEAETEQQaH/2gAIAQEAAT8hXIulEfHu0JXzm0dn/9oADAMBAAIAAwAAABBwz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABcRAQADAAAAAAAAAAAAAAAAAAEQESH/2gAIAQIBAT8QFmR//8QAGxABAAMAAwEAAAAAAAAAAAAAAQARIRAxQbH/2gAIAQEAAT8QFUy9/DywdiyU8YNoK98CjkDEEp7witPyf//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/513e9d128386dae8b264c3e3fe2dee79/8d3d1/fullstack-bulletin-website-preview.webp 256w,
+/static/513e9d128386dae8b264c3e3fe2dee79/354cf/fullstack-bulletin-website-preview.webp 512w,
+/static/513e9d128386dae8b264c3e3fe2dee79/44907/fullstack-bulletin-website-preview.webp 1024w,
+/static/513e9d128386dae8b264c3e3fe2dee79/5bb53/fullstack-bulletin-website-preview.webp 1200w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/513e9d128386dae8b264c3e3fe2dee79/b95e4/fullstack-bulletin-website-preview.jpg 256w,
+/static/513e9d128386dae8b264c3e3fe2dee79/1779b/fullstack-bulletin-website-preview.jpg 512w,
+/static/513e9d128386dae8b264c3e3fe2dee79/87945/fullstack-bulletin-website-preview.jpg 1024w,
+/static/513e9d128386dae8b264c3e3fe2dee79/5a523/fullstack-bulletin-website-preview.jpg 1200w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/513e9d128386dae8b264c3e3fe2dee79/87945/fullstack-bulletin-website-preview.jpg&quot;
+          alt=&quot;FullStack Bulletin website preview&quot;
+          title=&quot;FullStack Bulletin website preview&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In 2020 we didn’t change anything big in the format but the audience kept growing steadily:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.359375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAJABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAepRvgKrDhZ//8QAHBAAAQMFAAAAAAAAAAAAAAAAAgEDMQAEERIi/9oACAEBAAEFAiMti7S2TDSzTcf/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIRElH/2gAIAQMBAT8B2uEnbP/EABkRAAEFAAAAAAAAAAAAAAAAAAABAhIxUf/aAAgBAgEBPwGK6No//8QAGxABAAICAwAAAAAAAAAAAAAAAQARAiAiMXH/2gAIAQEABj8CeTKyVPZR1en/xAAcEAABBAMBAAAAAAAAAAAAAAAAAREhQRAxcYH/2gAIAQEAAT8hZti2eeBwlVISbO429P/aAAwDAQACAAMAAAAQS+//xAAWEQADAAAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8QURZZ/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EHSDAX//xAAdEAEAAQMFAAAAAAAAAAAAAAABABEhMWFxobHw/9oACAEBAAE/EDEICAwuxqKDVQXNmPwRQFNCg5Zz3cZ7dCf/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/dce6fd61a0f1489b0480aca7b9d754f7/8d3d1/fullstack-bulletin-growth-2020.webp 256w,
+/static/dce6fd61a0f1489b0480aca7b9d754f7/354cf/fullstack-bulletin-growth-2020.webp 512w,
+/static/dce6fd61a0f1489b0480aca7b9d754f7/03f31/fullstack-bulletin-growth-2020.webp 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/dce6fd61a0f1489b0480aca7b9d754f7/b95e4/fullstack-bulletin-growth-2020.jpg 256w,
+/static/dce6fd61a0f1489b0480aca7b9d754f7/1779b/fullstack-bulletin-growth-2020.jpg 512w,
+/static/dce6fd61a0f1489b0480aca7b9d754f7/dbdff/fullstack-bulletin-growth-2020.jpg 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/dce6fd61a0f1489b0480aca7b9d754f7/dbdff/fullstack-bulletin-growth-2020.jpg&quot;
+          alt=&quot;The growth of FullStack bulletin in terms of subscribers throughout 2020&quot;
+          title=&quot;The growth of FullStack bulletin in terms of subscribers throughout 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;One interesting thing is that toward the end of the year we surpassed some of the thresholds around free plans for some of the services we use, so we decided to start asking our subscribers for help.&lt;/p&gt;
+&lt;p&gt;If you are interested in supporting FullStack Bulletin, you can do so by &lt;a href=&quot;https://patreon.com/lucianomammino&quot;&gt;donating on Patreon&lt;/a&gt; or &lt;a href=&quot;https://fstack.link/sponsor&quot;&gt;sponsoring&lt;/a&gt; one of the next issues.&lt;/p&gt;
+&lt;p&gt;There are probably many ways we can improve FullStack Bulletin, so if you have any suggestion, please do let us know!&lt;/p&gt;
+&lt;h3 id=&quot;linkerflix&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#linkerflix&quot; aria-label=&quot;linkerflix permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linkerflix&lt;/h3&gt;
+&lt;p&gt;In 2020 I decided to start a new small side project: &lt;a href=&quot;https://app.linkerflix.com/&quot;&gt;Linkerflix&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 341px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsSAAALEgHS3X78AAAA5ElEQVQY06WPz0vDQBCF87cLehIvnvSgCApiBfEgKv64aMFSUSpSIxha27TRhppWrZtusvu5s2D17mMO877HG5gAJ2O0leFHxmL9Yv0ys8yg94FVil6/mcSVYaxMmSlePyUoLe9T/mqoiMekk18STEbZc/rirm8knYHO90P2Hjl44qzNWoPrPqctLructFi8YrnOYcR5myjz5frH2/ag10iZr+nOWLLVG7buqYQsVFm/Y+6ClVs5dxQJ33lgqUa168ujQh9nyWaY7zbRRkYVFFaWaUle8uWskS8KT1zqiONS5h/6BrWvUhzxasmMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ba91679a6d8ab85cf6bfd6894bedfc23/8d3d1/linkerflix-logo.webp 256w,
+/static/ba91679a6d8ab85cf6bfd6894bedfc23/a3746/linkerflix-logo.webp 341w&quot;
+          sizes=&quot;(max-width: 341px) 100vw, 341px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ba91679a6d8ab85cf6bfd6894bedfc23/85b06/linkerflix-logo.png 256w,
+/static/ba91679a6d8ab85cf6bfd6894bedfc23/005a8/linkerflix-logo.png 341w&quot;
+          sizes=&quot;(max-width: 341px) 100vw, 341px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ba91679a6d8ab85cf6bfd6894bedfc23/005a8/linkerflix-logo.png&quot;
+          alt=&quot;Linkerflix logo&quot;
+          title=&quot;Linkerflix logo&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Linkerflix is an idea that was born from the frustration I had while trying to create links to allow readers to buy the book from Amazon. I wanted to have a system that, by using only one link, would automatically redirect the user to the closest Amazon shop. For instance, a user clicking from Italy should be redirected to the book page on Amazon.it while someone in Ireland would go to Amazon.co.uk (we will see if this changes with Brexit, but that’s another topic 😅).&lt;/p&gt;
+&lt;p&gt;I have been researching a solution for this for a while until I found out that there’s an official solution from Amazon called &lt;a href=&quot;https://affiliate-program.amazon.com/onelink&quot;&gt;OneLink&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Unfortunately, I didn’t have a great experience while trying to setup OneLink for my account and in the end, I did realize that OneLink only works on a pre-determined website that you have to pre-configure with Amazon (e.g. this blog). Since you have to prove that you own every website you link, you cannot use OneLink on social media channels like Twitter or Youtube… such a bummer!&lt;/p&gt;
+&lt;p&gt;To overcome these limitations, in August 2020 I created 2 small alternative open source solutions: &lt;a href=&quot;https://github.com/lmammino/not-one-link&quot;&gt;&lt;code&gt;not-one-link&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/lmammino/not-one-link-lambda&quot;&gt;&lt;code&gt;not-one-link-lambda&lt;/code&gt;&lt;/a&gt;. Yes, the name is a pun! Sorry Amazon… 😇&lt;/p&gt;
+&lt;p&gt;Later in the year, as I noticed many content creators suffered the same struggle I faced with sharing links to products on Amazon, I thought it might be a cool idea to try to build a small SaaS service to make it easier to adopt the solutions I already created with &lt;code&gt;not-one-link&lt;/code&gt;. So I took one week off of work and I tried to build a super quick MVP. I documented the entire week on Twitter. If you are curious to see which technologies I used, how I structured the work and what kind of challenges I faced, you can read all the tweets on Threader:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://threader.app/thread/1315716999738265600&quot;&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threader.app/thread/1316088991016509442&quot;&gt;Day 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threader.app/thread/1316429789906055168&quot;&gt;Day 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threader.app/thread/1316806016726642691&quot;&gt;Day 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threader.app/thread/1317168317069742081&quot;&gt;Day 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threader.app/thread/1317868855767818241&quot;&gt;Day 6 &amp;#x26; 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The next big piece of work in line is more product facing. Now that I have an MVP I have to engage with potential users and try to get their feedback. Hopefully, at the end of this process, I will have found some degree of product market fit… or some new ideas for a pivot!&lt;/p&gt;
+&lt;p&gt;I want to dedicate some of my free times in 2021 to focus on this. Wish me luck!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your first projects aren’t the greatest things in the world, and they may have no money value, they may go nowhere, but that is how you learn - you put so much effort into making something right if it is for yourself.&lt;br&gt;
+— Steve Wozniak&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;blog&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#blog&quot; aria-label=&quot;blog permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blog&lt;/h2&gt;
+&lt;p&gt;If I have to be honest, I feel like I have been failing this blog a little in 2020. The main reason why I think that is because I have published only 3 new articles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/middy-1-is-here&quot;&gt;Middy 1.0.0 is here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/whats-in-a-jwt&quot;&gt;What’s in a JWT (Json Web Token)?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/learning-rust-through-open-source-and-live-code-reviews&quot;&gt;Learning Rust through open source and live code reviews&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Well, it’s easy to say I wasn’t a very prolific author… But let’s see some numbers to check the impact on the blog.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 21.09375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAd1QlA//xAAVEAEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAQABBQKv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAERMXH/2gAIAQEAAT8hbKFd0XT/2gAMAwEAAgADAAAAEI/f/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGRABAQEAAwAAAAAAAAAAAAAAAREAITGx/9oACAEBAAE/EAIXmeOEisGdnf/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/235655c90845216b463477ce0170d326/8d3d1/loige-co-stats-2020.webp 256w,
+/static/235655c90845216b463477ce0170d326/354cf/loige-co-stats-2020.webp 512w,
+/static/235655c90845216b463477ce0170d326/44907/loige-co-stats-2020.webp 1024w,
+/static/235655c90845216b463477ce0170d326/a8642/loige-co-stats-2020.webp 1536w,
+/static/235655c90845216b463477ce0170d326/b1218/loige-co-stats-2020.webp 2000w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/235655c90845216b463477ce0170d326/b95e4/loige-co-stats-2020.jpg 256w,
+/static/235655c90845216b463477ce0170d326/1779b/loige-co-stats-2020.jpg 512w,
+/static/235655c90845216b463477ce0170d326/87945/loige-co-stats-2020.jpg 1024w,
+/static/235655c90845216b463477ce0170d326/6afe2/loige-co-stats-2020.jpg 1536w,
+/static/235655c90845216b463477ce0170d326/109c0/loige-co-stats-2020.jpg 2000w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/235655c90845216b463477ce0170d326/87945/loige-co-stats-2020.jpg&quot;
+          alt=&quot;Pageviews and other stats for loige.co in 2020&quot;
+          title=&quot;Pageviews and other stats for loige.co in 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;As you can see from this graph, I got a total of &lt;strong&gt;77.886 pageviews&lt;/strong&gt; (72.043 unique). Compared to last year, where I had almost 120.000 views, it is a significant drop (~35% decrease).&lt;/p&gt;
+&lt;p&gt;It is also interesting to see that what’s driving most of the traffic is old articles:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1024px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwACBv/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAe4QlQbcP//EABcQAAMBAAAAAAAAAAAAAAAAAAABEAL/2gAIAQEAAQUCizUf/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BJ//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABUQAQEAAAAAAAAAAAAAAAAAACAx/9oACAEBAAY/Aqv/xAAZEAACAwEAAAAAAAAAAAAAAAABEQAQIVH/2gAIAQEAAT8hChuALyuU/9oADAMBAAIAAwAAABCzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QH//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EGf/xAAcEAABBAMBAAAAAAAAAAAAAAABABEhMRBBcYH/2gAIAQEAAT8QYaXA6ZCb2ECI7YNeFQ9X/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/d69755fefa6117614b68999d6161af08/8d3d1/loige-co-top-articles-in-2020.webp 256w,
+/static/d69755fefa6117614b68999d6161af08/354cf/loige-co-top-articles-in-2020.webp 512w,
+/static/d69755fefa6117614b68999d6161af08/44907/loige-co-top-articles-in-2020.webp 1024w,
+/static/d69755fefa6117614b68999d6161af08/5bb53/loige-co-top-articles-in-2020.webp 1200w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/d69755fefa6117614b68999d6161af08/b95e4/loige-co-top-articles-in-2020.jpg 256w,
+/static/d69755fefa6117614b68999d6161af08/1779b/loige-co-top-articles-in-2020.jpg 512w,
+/static/d69755fefa6117614b68999d6161af08/87945/loige-co-top-articles-in-2020.jpg 1024w,
+/static/d69755fefa6117614b68999d6161af08/5a523/loige-co-top-articles-in-2020.jpg 1200w&quot;
+          sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/d69755fefa6117614b68999d6161af08/87945/loige-co-top-articles-in-2020.jpg&quot;
+          alt=&quot;Top articles 2020 for loige.co&quot;
+          title=&quot;Top articles 2020 for loige.co&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;And, also that visitors are coming mostly through organic search:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.453125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB3abAkBov/8QAGhAAAQUBAAAAAAAAAAAAAAAAAQACEBESQf/aAAgBAQABBQKhRDtZXBH/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAEQIggf/aAAgBAQAGPwIUVtf/xAAbEAACAgMBAAAAAAAAAAAAAAAAAREhEDFBof/aAAgBAQABPyGbT0oGCXQqqXYh1j//2gAMAwEAAgADAAAAEC/P/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EE0n/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EByf/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARIRAxQYH/2gAIAQEAAT8QurwnkIVQFUo3rI3U00NL+zbYS16vH//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/f0592c7d9030dcd4622fe4e11b995a42/8d3d1/loige-co-traffic-sources-2020.webp 256w,
+/static/f0592c7d9030dcd4622fe4e11b995a42/354cf/loige-co-traffic-sources-2020.webp 512w,
+/static/f0592c7d9030dcd4622fe4e11b995a42/03f31/loige-co-traffic-sources-2020.webp 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/f0592c7d9030dcd4622fe4e11b995a42/b95e4/loige-co-traffic-sources-2020.jpg 256w,
+/static/f0592c7d9030dcd4622fe4e11b995a42/1779b/loige-co-traffic-sources-2020.jpg 512w,
+/static/f0592c7d9030dcd4622fe4e11b995a42/dbdff/loige-co-traffic-sources-2020.jpg 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/f0592c7d9030dcd4622fe4e11b995a42/dbdff/loige-co-traffic-sources-2020.jpg&quot;
+          alt=&quot;Traffic sources for loige.co in 2020&quot;
+          title=&quot;Traffic sources for loige.co in 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I am not a consistent author and I have been struggling for years to come up with a backlog of article ideas to pursue. I am not sure I want to make a promise to change this in 2021. Maybe I should just accept that I will keep blogging randomly and that this is not an area where I need to be consistent.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’ve never managed to keep a journal longer than two weeks.&lt;br&gt;
+— J. K. Rowling&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;external-blog-posts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#external-blog-posts&quot; aria-label=&quot;external blog posts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;External blog posts&lt;/h2&gt;
+&lt;p&gt;While I haven’t written a lot of new blog posts on this blog, I actually ended up publishing a decent number of articles on other sites. &lt;strong&gt;7 new posts&lt;/strong&gt; to be precise:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/loige/create-a-sitemap-for-your-eleventy-website-25h&quot;&gt;Generate a sitemap for your Eleventy website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/loige/add-a-generator-meta-tag-to-your-eleventy-website-48f1&quot;&gt;Add a generator meta tag to your Eleventy website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/loige/what-is-a-jwt-token-302k&quot;&gt;What is a JWT token&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://buddy.works/tutorials/determine-prominent-colors-in-a-picture-your-first-aws-lambda-in-go&quot;&gt;Determine prominent colors in a picture, your first AWS Lambda in Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/loige/getting-started-with-eleventy-in-11-minutes-496j&quot;&gt;Getting started with Eleventy in 11 minutes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://buddy.works/tutorials/integration-testing-for-aws-lambda-in-go-with-docker-compose&quot;&gt;Integration testing for AWS Lambda in Go with Docker-compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nodejsdesignpatterns.com/blog/5-ways-to-install-node-js/&quot;&gt;5 Ways to install Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am actually lying a little bit here… The two articles about AWS Lambda and Go are something I wrote during 2019 and they just got published this year… So, in reality, I have been publishing only 5 new posts.&lt;/p&gt;
+&lt;p&gt;Still, I don’t feel like this is to bad and I don’t want to commit to doing more for next year. At this point, I should embrace the fact that I will write blog posts only when there is something cool that I want to share.&lt;/p&gt;
+&lt;p&gt;There is maybe one exception I will try to make about this. I have been reading a bit about SEO during 2020 and I started the &lt;a href=&quot;https://www.nodejsdesignpatterns.com/blog/&quot;&gt;blog section on Node.js Design Patterns website&lt;/a&gt; to experiment with some of the ideas I had while learning more about SEO.&lt;/p&gt;
+&lt;p&gt;If I have to be serious about this I will have to publish a few more articles. At least one every month for the next 12 months. I already came up with a list of potential articles, so I am already laying the groundwork here…&lt;/p&gt;
+&lt;p&gt;I suppose, at the end of the year, we should be able to review my commitment and see if I managed to stay consistent here! 🤞&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I don’t journal to ‘be productive.’ I don’t do it to find great ideas or to put down prose I can later publish. The pages aren’t intended for anyone but me. It’s the most cost-effective therapy I’ve ever found.&lt;br&gt;
+— Tim Ferriss&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;building-a-twitter-audience&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#building-a-twitter-audience&quot; aria-label=&quot;building a twitter audience permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building a Twitter audience&lt;/h2&gt;
+&lt;p&gt;Another area that kept me busy in the second half of 2020 was working on building a Twitter audience. This is nothing new for me. I have been trying to do this for years since I started this blog and joined Twitter.&lt;/p&gt;
+&lt;p&gt;What’s changed this year is that I have been trying to take a slightly more conscious and structured approach.&lt;/p&gt;
+&lt;p&gt;How am I structuring things?&lt;/p&gt;
+&lt;p&gt;Well, before getting into that, let me give some credit to &lt;a href=&quot;https://twitter.com/dvassallo&quot;&gt;Daniel Vassallo&lt;/a&gt; and his great &lt;a href=&quot;https://gumroad.com/l/twitter-audience&quot;&gt;Everyone Can Build a Twitter Audience&lt;/a&gt; course. I watched his course this year and it helped me realise I did not have any plan or strategy.&lt;/p&gt;
+&lt;p&gt;In fairness, I don’t think I have come up with a particularly sophisticated plan now, but I have definitely identified some mistakes I was doing and I have tried to correct them. Let me list some of them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I was tweeting a lot of links to articles&lt;/strong&gt; (like a lot!). This is mainly because of the automation I set up for FullStack bulletin. Whenever I found an interesting article related to full stack web development I was tweeting it to add it to the list of selected articles for the next issue of FullStack bulletin. I don’t think tweeting articles is necessarily a bad thing, but it does not help me to express my personal opinion about things or to add colour to interesting tech topics or projects. Since I realised this I moved all these tweets to &lt;a href=&quot;https://twitter.com/fstackbulletin&quot;&gt;FullStack Bulletin’s Twitter account&lt;/a&gt;. Now, whenever there is something article I feel like I want to tweet I ask myself “can I add any valuable comment to this tweet?“. If the answer is yes, then I do share the article with some additional comment, otherwise, I just share it through the FullStack Bulletin profile. I am extending this logic to any retweet. I have stopped almost all retweets unless I feel like I can add some colour to the original tweet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I was not giving enough&lt;/strong&gt;. Building an audience is mostly about &lt;em&gt;giving&lt;/em&gt; and very little about &lt;em&gt;taking&lt;/em&gt;. What I mean by this is that revisiting some of my previous tweets I realised I was not giving my audience many reasons to follow me. Since I realised this mistake I am actually tweeting less, but when I do try to post something meaningful and useful. It can be a quick tip about something I just learned and that might be useful to other engineers. It might be an opinion about a new technology I have been playing with… This also helps to show interest and expertise on a given area and this should encourage people with similar interests to engage more.&lt;/p&gt;
+&lt;p&gt;And this brings me to another important mistake: &lt;strong&gt;I was not engaging enough&lt;/strong&gt; with people with similar interests. This is an easy one to fix in principle, but it is one that takes a lot of time. It means you have to spend a lot more time on Twitter &lt;strong&gt;listening&lt;/strong&gt; rather than just &lt;strong&gt;talking&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To be fair, this one last point was a bit illuminating to me. When I realised this mistake I felt like I have been using Twitter in the wrong way for so long… In fact, I have been using Twitter more as a news broadcasting channel rather than a place for conversations.&lt;/p&gt;
+&lt;p&gt;Realising all these mistakes made me change the way I used Twitter and I have a feeling that now I can use it to have better conversations and engage more with people and learn from them.&lt;/p&gt;
+&lt;p&gt;But let’s have a look at the numbers to see if all of this had an effect on my followers base:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.109375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHeMilpAf/EABgQAAIDAAAAAAAAAAAAAAAAABEhAAEQ/9oACAEBAAEFAlpZVT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAgMAAAAAAAAAAAAAAAABEQCRECFx/9oACAEBAAE/IQC2skrR6Q2+z//aAAwDAQACAAMAAAAQ08//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhQTFRkaH/2gAIAQEAAT8QJpye5atEF3LE1h8gdsXR9aim2kT/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/d60a20048d24bb722fa11a2cf3f2e94c/8d3d1/loige-twitter-followers-growth-2020.webp 256w,
+/static/d60a20048d24bb722fa11a2cf3f2e94c/354cf/loige-twitter-followers-growth-2020.webp 512w,
+/static/d60a20048d24bb722fa11a2cf3f2e94c/03f31/loige-twitter-followers-growth-2020.webp 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/d60a20048d24bb722fa11a2cf3f2e94c/b95e4/loige-twitter-followers-growth-2020.jpg 256w,
+/static/d60a20048d24bb722fa11a2cf3f2e94c/1779b/loige-twitter-followers-growth-2020.jpg 512w,
+/static/d60a20048d24bb722fa11a2cf3f2e94c/dbdff/loige-twitter-followers-growth-2020.jpg 1000w&quot;
+          sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/d60a20048d24bb722fa11a2cf3f2e94c/dbdff/loige-twitter-followers-growth-2020.jpg&quot;
+          alt=&quot;Loige&amp;#39;s Twitter followers growth over 2020&quot;
+          title=&quot;Loige&amp;#39;s Twitter followers growth over 2020&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This graph represents the number of new followers month by month. I started changing my behaviours around the end of July 2020 and you can see there is a visible inflexion point there.&lt;/p&gt;
+&lt;p&gt;I know that this is not a sophisticated analysis, but I would like to think that I am onto something here. I’ll keep collecting raw data and eventually do a better analysis to try to find some interesting correlation between actions and the number of new followers per month.&lt;/p&gt;
+&lt;p&gt;Meanwhile, if you are curious, you can have a look at my &lt;a href=&quot;https://docs.google.com/spreadsheets/d/17s0nxnu3o-JVOE13CouB7m9bpXHVPOGs-MwCE-vWCmc/edit?usp=sharing&quot;&gt;raw data&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you think you’re boring your audience, go slower not faster.&lt;br&gt;
+— Gustav Mahler&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;open-source&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#open-source&quot; aria-label=&quot;open source permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Open Source&lt;/h2&gt;
+&lt;p&gt;In 2020, I did not stop doing my small part to contribute to open source. Here’s a quick list of my contributions on different projects on GitHub:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/middyjs/middy&quot;&gt;Middy&lt;/a&gt;: Node.js middleware framework for AWS Lambda.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/fastify/website&quot;&gt;Fastify website&lt;/a&gt;: Fastify’s website.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/jwtinfo&quot;&gt;jwtinfo&lt;/a&gt;: A command-line tool to get information about JWTs (Json Web Tokens) - my first open source Rust project!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/PacktPublishing/Node.js-Design-Patterns-Third-Edition&quot;&gt;PacktPublishing/Node.js-Design-Patterns-Third-Edition&lt;/a&gt;: Repository with all the code examples from the third edition of Node.js Design Patterns.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/minikube-helm-init-container&quot;&gt;minikube-helm-init-container&lt;/a&gt;: Sample helm based web application using an init container.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/univ&quot;&gt;univ&lt;/a&gt;: Universal JavaScript application example without server side transpilation (React + Fastify).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/unsplash/comment-on-pr&quot;&gt;unsplash/comment-on-pr&lt;/a&gt;: A GitHub Action to comment on the relevant open PR when a commit is pushed (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/luciopaiva/heapify&quot;&gt;luciopaiva/heapify&lt;/a&gt;: The fastest JavaScript priority queue out there. Zero dependencies (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Kevinrob/guzzle-cache-middleware&quot;&gt;Kevinrob/guzzle-cache-middleware&lt;/a&gt;: A HTTP Cache for Guzzle 6. It’s a simple Middleware to be added in the HandlerStack (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/guzzle-fs-cache-middleware&quot;&gt;guzzle-fs-cache-middleware&lt;/a&gt;: A simple FS backed guzzle cache file middleware compatible with php 5.6.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/fastify-preact-htm-boilerplate&quot;&gt;fastify-preact-htm-boilerplate&lt;/a&gt;: Quickly bootstrap your next web app with Fastify, Preact and htm.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/streams-examples&quot;&gt;streams-examples&lt;/a&gt;: A bunch of examples on how to use Node.js streams.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/guzzle-apcu-fs-cache&quot;&gt;guzzle-apcu-fs-cache&lt;/a&gt;: A zero config cache storage for guzzle-cache-middleware that tries to cache on Apcu and fallbacks to filesystem.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/algorust&quot;&gt;algorust&lt;/a&gt;: Randomly playing with algorithms and Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/DataDog/java-dogstatsd-client&quot;&gt;DataDog/java-dogstatsd-client&lt;/a&gt;: a java statsd client library by Datadog (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/undici&quot;&gt;nodejs/undici&lt;/a&gt;: An HTTP/1.1 client, written from scratch for Node.js (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jsmrcaga/action-netlify-deploy&quot;&gt;jsmrcaga/action-netlify-deploy&lt;/a&gt;: a GitHub Action step to easily deploy on Netlify (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/financial&quot;&gt;financial&lt;/a&gt;: A Zero-dependency TypeScript/JavaScript financial library (based on numpy-financial) for Node.js, Deno and the browser.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/nim-node-hello-world-http-bench&quot;&gt;nim-node-hello-world-http-bench&lt;/a&gt;: A super simple benchmark to compare Nim raw http performance against Node.js.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/denoland/deno_website2&quot;&gt;denoland/deno_website2&lt;/a&gt;: deno.land website (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/react-sca&quot;&gt;react-sca&lt;/a&gt;: A super simple scaffold for React projects for those who believe CreateReactApp is bloated.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/11ty/eleventy-img&quot;&gt;11ty/eleventy-img&lt;/a&gt;: Utility to perform build-time image transformations in Eleventy (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/not-one-link&quot;&gt;not-one-link&lt;/a&gt;: A simple Node.js library that allows you to re-map Amazon links from one country to another (Like Amazon OneLink™️ but simpler to use).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/not-one-link-lambda&quot;&gt;not-one-link-lambda&lt;/a&gt;: An AWS lambda that allows you to host your own alternative of Amazon OneLink™️ to rewrite Amazon URLs.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kryz81/awesome-nodejs-learning&quot;&gt;kryz81/awesome-nodejs-learning&lt;/a&gt;: About
+A list limited to the best Node.js Learning Resources (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mre/idiomatic-rust&quot;&gt;mre/idiomatic-rust&lt;/a&gt;: A peer-reviewed collection of articles/talks/repos which teach concise, idiomatic Rust (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/11ty-sample-project&quot;&gt;11ty-sample-project&lt;/a&gt;: An example project to illustrate the main features of Eleventy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mattermost/mattermost-webapp&quot;&gt;mattermost/mattermost-webapp&lt;/a&gt;: Webapp of Mattermost server (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/xdesro/personalsit.es&quot;&gt;xdesro/personalsit.es&lt;/a&gt;: A little directory of people’s personal sites (contribution).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lmammino/next-sample-file-upload-app&quot;&gt;next-sample-file-upload-app&lt;/a&gt;: Playing with Next.js and building a sample file upload app for educational purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a total of 30 projects I have been involved with in 2020. I used to compare this metric year by year, but I am finally realising that it might not make a lot of sense to do so. Some of these contributions are quite small (e.g. a README fix) while others required me a significant investment of multiple hours, days or even weeks.&lt;/p&gt;
+&lt;p&gt;I don’t know if there is any decent way to compare my involvement in Open Source between years, but from now on I will be happy as long as I can write something in this section.&lt;/p&gt;
+&lt;p&gt;One project that is definitely worth discussing though is &lt;a href=&quot;https://www.fastify.io/&quot;&gt;Fastify website&lt;/a&gt;. This year I didn’t have a lot of time to invest in it and I realised that I have become a blocker for the project. This probably shows that I haven’t structured and documented the project well enough to allow other people to contribute. Of course, this is bad, so definitely an area to improve on for 2021.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Each of us is a unique strand in the intricate web of life and here to make a contribution.&lt;br&gt;
+— Deepak Chopra&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;previous-year-goals&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#previous-year-goals&quot; aria-label=&quot;previous year goals permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Previous year goals&lt;/h2&gt;
+&lt;p&gt;Now it’s finally time to check how I performed against my &lt;a href=&quot;https://loige.co/2019-a-year-in-review#expectations-for-next-year&quot;&gt;previous year goals&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅  &lt;strong&gt;Get a new job&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;✅  &lt;strong&gt;Do only a few (invitation-based) conferences (3 or 4)&lt;/strong&gt;: I smashed this one (unexpectedly)!&lt;/li&gt;
+&lt;li&gt;😐  &lt;strong&gt;Write some good quality blog posts (at least 4)&lt;/strong&gt;: I think I failed at this, unless we want to cumulative count all the blog posts, even outside this blog…&lt;/li&gt;
+&lt;li&gt;✅  &lt;strong&gt;Release Middy v1.0 stable and have a plan for the future of the framework together with the community around it&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;✅  &lt;strong&gt;Publish a new book (or a new edition!)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;✅  &lt;strong&gt;Learn more about Rust&lt;/strong&gt;: I still feel like I am only at the early days, but 2020 was definitely the year were I felt Rust started to click for me!&lt;/li&gt;
+&lt;li&gt;✅  &lt;strong&gt;Learn more about Kubernetes&lt;/strong&gt;: I definitely did learn a ton about Kubernetes in 10 months at Fabfitfun.&lt;/li&gt;
+&lt;li&gt;😐  &lt;strong&gt;Keep learning AWS and serverless&lt;/strong&gt;: I definetely didn’t do much around this area except maybe trying to read some relevant news and articles.&lt;/li&gt;
+&lt;li&gt;😭  &lt;strong&gt;Get an advanced AWS certification&lt;/strong&gt;: Definitely failed at this one. I did renew my subscription for A Cloud Guru but then I did not spend enough time to be able to try to get an AWS Solution Architect professional certification…&lt;/li&gt;
+&lt;li&gt;😐  &lt;strong&gt;Improve FullStack bulletin&lt;/strong&gt;: FullStack Bulletin definitely kept growing steadily but I feel I didn’t invest any time trying to figure out what could have been improved.&lt;/li&gt;
+&lt;li&gt;😭  &lt;strong&gt;More serious and constant BJJ training&lt;/strong&gt;: well… I did stop this one entirely and you can all imagine why in 2020… I compensated it a bit by going for running and a great thank you goes to my dear friend &lt;a href=&quot;https://twitter.com/lucamarchesotti&quot;&gt;Luca (@lucamarchesotti)&lt;/a&gt; for motivating me!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Looking back, I think I have actually achieved more than ever this year. I am not going to lie, this comes a bit unexpected…&lt;/p&gt;
+&lt;p&gt;One thing is certain though. I should try to re-asses these goals on a more regular basis, rather than just doing it at the end of the year. I think doing it maybe on a quarterly basis can help me to see if I am on track or not and where it makes sense to spend most of my time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Exercise to stimulate, not to annihilate. The world wasn’t formed in a day, and neither were we. Set small goals and build upon them.&lt;br&gt;
+— Lee Haney&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;expectations-for-2021&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#expectations-for-2021&quot; aria-label=&quot;expectations for 2021 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Expectations for 2021&lt;/h2&gt;
+&lt;p&gt;Getting close to the end of the year I have been spending a lot of time trying to think where I want my career to go and which areas I might want to invest my time.&lt;/p&gt;
+&lt;p&gt;Before giving you my conclusion, let me thank &lt;a href=&quot;https://twitter.com/PadraigOBrien&quot;&gt;Padraig O’Brien&lt;/a&gt; for spending a lot of time mentoring me on this and for triggering some great reflections.&lt;/p&gt;
+&lt;p&gt;What I realised is that I want to grow in 3 different directions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Become a better &lt;strong&gt;Software Engineer&lt;/strong&gt;: learn new technologies, step out of my comfort zone of FullStack wen development.&lt;/li&gt;
+&lt;li&gt;Become a better &lt;strong&gt;Cloud Architect&lt;/strong&gt;: I think I am currently junior/mid-ish when it comes to cloud architectures. But this is an area where I enjoy a lot spending my time and one where there is an increasing number of opportunities.&lt;/li&gt;
+&lt;li&gt;Become a more serious &lt;strong&gt;Indie Maker&lt;/strong&gt; and &lt;strong&gt;startupper&lt;/strong&gt;: I have launched (and failed!) startups before. I have also launched several products. This is not a new one for me, but this year I have been realising that I have always approached this topic mostly from a technology perspective. For this reason, I think I have always delivered well on the tech side, but quite poorly on the product, marketing and overall strategy. I definitely want to have excuses to explore these areas more and become a more complete individual when it comes to build and launch a product.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, based on these 3 broad topics, this year, I want to try to organise some more practical goals in categories:&lt;/p&gt;
+&lt;h3 id=&quot;get-better-at-software-engineering&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#get-better-at-software-engineering&quot; aria-label=&quot;get better at software engineering permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get better at Software Engineering&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Continue to get better at Rust&lt;/strong&gt;: I think the language it’s just a tool, but it can definitely help to step outside the comfort zone of higher-level interpreted languages and learn a lot more about lower-level concepts like memory management.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improve Fastify website&lt;/strong&gt;: make sure that it is easy for other people to join the project and contribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;become-a-better-cloud-architect&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#become-a-better-cloud-architect&quot; aria-label=&quot;become a better cloud architect permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Become a better Cloud Architect&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Keep learning about AWS and cloud deployments&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get a new certification&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keep learning about Kubernetes&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;become-a-more-serious-indie-maker&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#become-a-more-serious-indie-maker&quot; aria-label=&quot;become a more serious indie maker permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Become a more serious Indie Maker&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Complete the research around Linkerflix&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Launch a new product (either Linkerflix or something else)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keep building an audience&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Publish 12 articles on Node.js Design patterns blog&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In between goals is a thing called life, that has to be lived and enjoyed.&lt;br&gt;
+— Sid Caesar&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;conclusions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusions&quot; aria-label=&quot;conclusions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;Woah! Have you really been reading all this stuff?! At this point, you probably know me better than my mom! 🤣&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/content/361a986e3c4a5a25347d2c66f627eb8e/shocked-cat.gif&quot; alt=&quot;A shocked cat&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Well, what can I say? I am flattered, but also curious to know what you think about all that I have been blurting here… &lt;/p&gt;
+&lt;p&gt;Definitely do leave a comment and let me know, but also please share what will be your career goals for 2021… I am really curious to find out what you have in mind for yourself!&lt;/p&gt;
+&lt;p&gt;Ciao! 👋&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learning Rust through open source and live code reviews]]></title><description><![CDATA[Hello from Luciano and Stefano! 👋 In the last few years we set ourselves onto the Rust learning path. We don’t work with Rust during our…]]></description><link>https://loige.co/learning-rust-through-open-source-and-live-code-reviews</link><guid isPermaLink="false">https://loige.co/learning-rust-through-open-source-and-live-code-reviews</guid><pubDate>Sun, 11 Oct 2020 19:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://loige.costatic/5efdbd21a961cf9e541eeff8c5d4521c/learning-rust-through-open-source-and-live-code-reviews-fb.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;Hello from Luciano and Stefano! 👋&lt;/p&gt;
 &lt;p&gt;In the last few years we set ourselves onto the Rust learning path. We don’t work with Rust during our daily jobs and we come to be interested in the language for different reasons (more on this later), so we decided to take it easy and invest some of our free time reading books and tutorials, watching videos about Rust and doing occasional coding challenges. Finally after about one year of sporadic studying sessions we felt ready to attempt our first open source Rust project: &lt;a href=&quot;https://github.com/lmammino/jwtinfo&quot;&gt;&lt;code&gt;jwtinfo&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We recently had the pleasure to have our crate reviewed by &lt;a href=&quot;https://twitter.com/timClicks&quot;&gt;Tim McNamara&lt;/a&gt; of &lt;a href=&quot;https://www.manning.com/books/rust-in-action&quot;&gt;Rust in Action&lt;/a&gt;’s fame (one the best Rust books out there in our honest opinion!). The review was carried out live on &lt;a href=&quot;https://www.twitch.tv/timclicks&quot;&gt;Tim’s twitch channel&lt;/a&gt; and it gave us a lot of cues on things to improve.
 This article serves as a summary for our experience and memorandum of all the interesting things we learned. If you are learning Rust as well, we hope you will find some of these notes useful!&lt;/p&gt;
